@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="guide-text">* 클립다운을 통해 유튜브를 시청하는 경우 위 광고들이 차단되며, 일부 동영상의 경우 광과 노출될 수 있습니다.</p>
+                <p class="guide-text">* 클립다운을 통해 유튜브를 시청하는 경우 위 광고들이 차단되며, 일부 동영상의 경우 광고 노출될 수 있습니다.</p>
                 <div class="btn_box">
                     <a href="#" class="btn btn-push">유튜브 광고제거 플러그인 업데이트</a>            
                 </div>
@@ -90,10 +90,66 @@
                 </div>
             </div>
         </section>
+        <!-- layer PopUp  -->
+        <div class="popup">
+            <div class="popup-content">
+                <!-- Chrome 좌측하단 -->
+                <div class="install-info ta-l">
+                    <img src="./resource/images/layer_clipdown-install-01.gif" alt="">
+                </div>
+                <!-- MSedge 중앙하단 -->
+                <div class="install-info ta-c hide">
+                    <img src="./resource/images/layer_clipdown-install-01.gif" alt="">
+                </div>
+                <!-- Whale 중앙하단 -->
+                <div class="install-info ta-c hide">
+                    <img src="./resource/images/layer_clipdown-install-02.gif" alt="">
+                </div>
+            </div>
+        </div>
+           <!-- // layer PopUp  -->
         <footer class="footer"> 
             <p class="copyright">Copyright ⓒ J’SFUTURE corp. All Rights Reserved.</p>
         </footer>
     </div> <!-- // wrap -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+    <script src="./resource/js/jquery.bpopup.min.js"></script>
+    <script>
+    function popupOpenClose(popup) {
+	
+    /* Add div inside popup for layout if one doesn't exist */
+    if ($(".wrapper").length == 0){
+        $(popup).wrapInner("<div class='wrapper'></div>");
+    }
+    
+    /* Open popup */
+    $(popup).show();
+
+    /* Close popup if user clicks on background */
+    $(popup).click(function(e) {
+        if ( e.target == this ) {
+            if ($(popup).is(':visible')) {
+                $(popup).hide();
+            }
+        }
+    });
+
+    /* Close popup and remove errors if user clicks on cancel or close buttons */
+    $(popup).find("button[name=close]").on("click", function() {
+        if ($(".formElementError").is(':visible')) {
+            $(".formElementError").remove();
+        }
+        $(popup).hide();
+    });
+}
+
+$(document).ready(function () {
+    $("[data-js=open]").on("click", function() {
+        popupOpenClose($(".popup"));
+    });
+});
+    </script>
     
 </body>
 </html>
