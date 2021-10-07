@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>css animation과 svg를 활용해 글자가 그려지는 효과 만들기</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); 
+        body { width: 100%; height: 100%; background: #16345A; padding: 0; margin: 0; } 
+        .text-box { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; } 
+        svg text { font-family: 'Staatliches', cursive; font-size: 6em; fill:transparent; stroke-dasharray: 326px; animation: stroke 1s linear; animation-fill-mode: forwards; } 
+        svg text:nth-child(1) { animation-delay: 0s; } 
+        svg text:nth-child(2) { animation-delay: 0.5s; } 
+        svg text:nth-child(3) { animation-delay: 1s; } 
+        svg text:nth-child(4) { animation-delay: 1.5s; } 
+        svg text:nth-child(5) { animation-delay: 2s; } 
+        svg text:nth-child(6) { animation-delay: 2.5s; } 
+        svg text:nth-child(7) { animation-delay: 3s; } 
+        svg text:nth-child(8) { animation-delay: 3.5s; } 
+        svg text:nth-child(9) { animation-delay: 4s; } 
+        svg text:nth-child(10) { animation-delay: 4.5s; } 
+        svg text:nth-child(11) { animation-delay: 5s; } 
+        svg text:nth-child(12) { animation-delay: 5.5s; } 
+        @keyframes stroke { 
+            0% { stroke:#F1C164; stroke-width: 3px; stroke-dashoffset: 326px; } 
+            70% { fill: transparent; } 
+            98% { stroke:#F1C164; stroke-width: 3px; } 
+            100% { fill: #F1C164; stroke-dashoffset: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="text-box"> 
+        <div class="text-wrap"> 
+            <svg width=525 height=160 viewBox="0 0 525 160"> 
+                <text x="0" y="50%">O</text> <text x="45" y="50%">R</text> 
+                <text x="90" y="50%">D</text> <text x="135" y="50%">I</text> 
+                <text x="155" y="50%">N</text> <text x="199" y="50%">A</text> 
+                <text x="240" y="50%">R</text> <text x="285" y="50%">Y</text> 
+                <text x="350" y="50%">C</text> <text x="395" y="50%">O</text> 
+                <text x="440" y="50%">D</text> <text x="485" y="50%">E</text> 
+            </svg> 
+        </div> 
+    </div>
+</body>
+</html>
