@@ -351,6 +351,7 @@ a.disabled{pointer-events: none;}
 .popup .popup-content .install-info.center{max-width: 340px; position: fixed; top: 50%; left: 50%;-webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; z-index: 5001;} 
 
 /* [추가] 유튜브 광고 제거 이용안내 팝업 20211015 */
+.popup{display: none;}
 .popup.popup_info > div {
 	max-width: 600px;
 	width: 100%;
