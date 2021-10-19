@@ -47,6 +47,11 @@
 .intro-section .left_text{padding:60px 0;}
 .intro-section .bg_01{background-image: url(../images/bg_figure.png); background-repeat: no-repeat; position: absolute; top: 0; right: 0; width: 63%; height: 700px;}
 .intro-section .btn-box{display: block;}
+.intro-section .img_main_style{}
+.intro-section .img_main_style .bg_mac{}
+.intro-section .img_main_style .main_img{position: absolute; top:50%; left: 50%; width:568px; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+
+
 .videolist-section .info-area .info-text{font-size: 16px; font-size: 1.6rem; font-weight:600; margin-bottom:15px;}
 .videolist-section .info-area .info-text-s{font-size: 13px; font-size: 1.3rem;}
 .services-section .bg_02{background-image: url(../images/bg_figure.png); background-repeat: no-repeat; position: absolute; top: 120%; left: -1080px; width: 1373px; height: 1373px;}
