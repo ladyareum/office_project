@@ -235,6 +235,7 @@ transform: translateY(-15px);
 .services-section .m-btn-box{margin-top: 10px;}
 .services-section .m-btn-box .btn-group a.btn{display:block; float: none; text-align:center; margin: 0; padding: 10px 0;}
 .services-section .m-btn-box .btn-group .img-fluid{max-width: 200px;}
+.services-section .btn-lg{min-height: 48px !important; font-size: 18px !important; padding: 16px 60px !important;}
 .search-bar .search-form .form-control{font-size: 14px; font-size: 1.4rem;}
 .contact-section .btn{padding: 8px 40px !important;}
 .popup-header .btn-area{position:absolute; top:0; right:10px; padding:20px 0;}		
