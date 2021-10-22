@@ -40,7 +40,8 @@ background: #f5f5f5;
 .content_info{position: relative; text-align:left; margin: 60px 0; z-index: 100;}
 .info-area{position: relative; z-index: 100;}
 .left_img, .right_img{position: relative; overflow: hidden; margin-top: 20px;}
-.m-btn-box{display: none; position: relative; vertical-align: middle;}
+.m-btn-box{display: none; position: relative; vertical-align: middle; width:100%;}
+.m-btn-box .m_btn{display: inline-block; position: relative; width: 40%;}
 .intro-section .header_title{text-align: left; font-size: 40px; font-size: 4.0rem; font-weight: 500; line-height: 1.6; padding-left: 20px;}
 .intro-section .m_main_img{display:none;}
 .intro-section .btn-box{display: block; text-align: left; margin: 40px 0;}
@@ -67,7 +68,6 @@ background: #f5f5f5;
 .services-section .contents-mobile .right_text .content-text{padding-bottom: 20px;}
 .services-section .btn-box{margin:40px 0;}
 .services-section .m-btn-box{display: block;}
-.services-section .m-btn-box .m_btn{display: inline-block; position: relative; width: 40%;}
 .services-section .btn-group a.btn{padding:0;}
 .services-section .btn-lg{min-height: 72px !important; font-size: 28px !important; padding: 16px 100px !important;}
 
@@ -179,13 +179,13 @@ transform: translateY(-15px);
 .content_info{margin: 50px 0; text-align: center;}
 .content_info .col-2{width:100%;}
 .intro-section, .uselist-section, .services-section, .contact-section, .notice-section{padding-top:75px;}
-.intro-section .bg_01{width:70%; height: 700px; right: 0;}
+.intro-section {height:780px}
+.intro-section .bg_01{width:70%; height: 780px; right: 0;}
 .intro-section .header_title{font-size: 40px; font-size: 4.0rem;}
 .intro-section .btn-box{display: none;}
 .intro-section .header_title, .intro-section .btn-box{text-align: center; padding-left: 0;}
 .intro-section .left_text{padding: 30px 0;}
-.intro-section .m-btn-box{margin-top: 20px;}
-.intro-section .m-btn-box .btn-group .btn{width:240px; margin: 10px 0; padding: 0;}
+.intro-section .m-btn-box .m_btn{margin: 40px 0; }
 .services-section .bg_02{top: 140%; left: -1170px;}
 .services-section .left_text, .services-section .right_text{text-align:center; margin: 20px 0; padding: 0;}
 .services-section .contents-mobile .left_img{float: initial;}
@@ -221,10 +221,9 @@ transform: translateY(-15px);
 .left_img, .right_img{width:100% !important;}
 .content_info{margin: 25px 0;}
 .slick-dotted.slick-slider{margin-bottom: 10px;}
-.intro-section, .intro-section .bg_01{height: 540px;}
+.intro-section, .intro-section .bg_01{height: 700px;}
 .intro-section .bg_01{width:100%;}
 .intro-section .m_main_img{width:80% !important; min-width: 260px;}
-.intro-section .m-btn-box .btn-group .btn{width:200px;}
 .intro-section .header_title{font-size: 32px; font-size: 3.2rem;}
 .uselist-section{height: 1400px;}
 .uselist-section .col-4{width: 100%;}
