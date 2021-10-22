@@ -41,7 +41,7 @@ background: #f5f5f5;
 .info-area{position: relative; z-index: 100;}
 .left_img, .right_img{position: relative; overflow: hidden; margin-top: 20px;}
 .m-btn-box{display: none; position: relative; vertical-align: middle;}
-.intro-section .header_title{text-align: left; font-size: 40px; font-size: 4.0rem; font-weight: 500; line-height: 1.6;}
+.intro-section .header_title{text-align: left; font-size: 40px; font-size: 4.0rem; font-weight: 500; line-height: 1.6; padding-left: 20px;}
 .intro-section .m_main_img{display:none;}
 .intro-section .btn-box{display: block; text-align: left; margin: 40px 0;}
 .intro-section .left_text{padding:60px 0;}
@@ -61,7 +61,7 @@ background: #f5f5f5;
 .services-section .left_img, .services-section .right_img{margin-top: 0;}
 .services-section .right_text{margin: 20px 0; padding: 10px 0 40px 40px;}
 .services-section .left_text{text-align:right; margin:20px 0; padding: 10px 40px 40px 0;}
-.services-section .contents-pc, .services-section .contents-mobile{margin-bottom: 100px;}
+.services-section .contents-pc, .services-section .contents-mobile{margin-top: 60px; margin-bottom: 100px;}
 .services-section .contents-mobile .left_img, .services-section .contents-mobile .right_img{width:80%;}
 .services-section .contents-mobile .left_img{float: right;}
 .services-section .contents-mobile .right_text .content-text{padding-bottom: 20px;}
