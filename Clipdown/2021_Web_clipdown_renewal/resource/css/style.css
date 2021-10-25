@@ -47,9 +47,11 @@ background: #f5f5f5;
 .intro-section .btn-box{display: block; text-align: left; margin: 40px 0;}
 .intro-section .left_text{padding:60px 0;}
 .intro-section .bg_01{background-image: url(../images/bg_figure.png); background-repeat: no-repeat; position: absolute; top: 0; right: 0; width: 63%; height: 700px;}
-.intro-section .img_main_style{}
-.intro-section .img_main_style .bg_mac{}
+.intro-section .img_main_style .bg_mac{position: relative;}
 .intro-section .img_main_style .main_img{position: absolute; top:50%; left: 50%; width:80%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.video-overlay{position:absolute; top:0; left:0; z-index:1;}
+.video-overlay.play{cursor:pointer;}
+.video-overlay .btn_play{position:absolute; top:50%; left:50%; width:68px; height:68px; background:url(../video/btn_play.png) no-repeat; margin:-50px 0 0 -50px;}
 
 .uselist-section .content_info{margin: 40px 0;}
 .uselist-section .info-area .info-text{font-size: 16px; font-size: 1.6rem; font-weight:600; margin-bottom:15px;}
@@ -248,9 +250,3 @@ transform: translateY(-15px);
 .services-section .m-btn-box .btn-group .img-fluid{width: 160px;}
 }
 
-.main_video .btn_player{position:absolute; top:50%; left:50%; width:68px; height:768px; margin:-50px 0 0 -50px;}
-
-
-.video-overlay{position:absolute; top:0; left:0; z-index:1;}
-.video-overlay.play{cursor:pointer;}
-.video-overlay .btn_play{position:absolute; top:50%; left:50%; width:72px; height:72px; background:url(../video/btn_play.png) no-repeat; margin:-50px 0 0 -50px;}
