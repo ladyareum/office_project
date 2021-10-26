@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @charset "utf-8";
 
 /*!
@@ -23,7 +24,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video{margin:0; padding:0; border: 0; font-size:100%; font: inherit; vertical-align:baseline;}
 article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section{display:block;} /* HTML5 display-role reset for older browsers */
 audio, canvas, progress, video {display: inline-block; vertical-align: baseline;}
-div,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,p,th,td,input,textarea,select,button,pre,a{font-family:'SCDream', 'NanumSquare', 'Apple SD Gothic Neo', Helvetica, sans-serif; font-size:1.4rem; font-size:14px; line-height: 1.2; color:#333;}
+div,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,p,th,td,input,textarea,select,button,pre,a{font-family:'SCDream', 'Noto Sans KR', 'Apple SD Gothic Neo', Helvetica, sans-serif; font-size:1.4rem; font-size:14px; line-height: 1.2; color:#333;}
 html, body{width: 100%; height: 100%;}
 html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 body{line-height: 1.5; overflow-x: hidden; overflow-y: auto;-ms-overflow-style:none;}
