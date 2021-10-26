@@ -198,7 +198,7 @@ transform: translateY(-15px);
 .uselist-section .col-4{width: 50%;}
 .uselist-section .item_box{max-width: 280px;} 
 .uselist-section .content_info{margin: 20px 0;}
-
+.notice-section .tabs-menu{margin:0;}
 .tabs_faq .nav-tab{border-bottom:0; padding: 0;}
 .tabs_faq .nav-tab li{float:left; width:25%; text-align: center; margin-top: 0; padding: 10px 10px;}	
 .search-bar .search-form{width: 100%;}
