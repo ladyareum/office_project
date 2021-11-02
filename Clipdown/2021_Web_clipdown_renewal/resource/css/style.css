@@ -168,9 +168,6 @@ transform: translateY(-15px);
 }
 
 /* Media Query */
-@media (min-width: 992px){
-
-}
 @media screen and (max-width: 767px){
 .nav>li.menu_download{display: none;}
 .left_img, .right_img{width:70% !important; margin:0 auto;}
