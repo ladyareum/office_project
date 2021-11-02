@@ -190,7 +190,7 @@ transform: translateY(-15px);
 .intro-section .header_title, .intro-section .btn-box{text-align: center; padding-left: 0;}
 .intro-section .left_text{padding: 30px 0;}
 
-.services-section .contents-pc, .services-section .contents-mobile{margin-top:30px;}
+.services-section .contents-pc, .services-section .contents-mobile{margin-top:30px; margin-bottom: 70px;}
 .services-section .bg_02{top: 140%; left: -1170px;}
 .services-section .left_text, .services-section .right_text{text-align:center; margin: 20px 0; padding: 0;}
 .services-section .contents-mobile .left_img{float: initial;}
