@@ -171,7 +171,8 @@ transform: translateY(-15px);
 @media (min-width: 992px){
 
 }
-@media screen and (max-width: 767px){	
+@media screen and (max-width: 767px){
+.nav>li.menu_download{display: none;}
 .left_img, .right_img{width:70% !important; margin:0 auto;}
 .m-btn-box .btn-group .btn{display: block; float: none; width:240px; margin: 20px 0;}
 .m-btn-box{display: block; margin: 40px 0;}
@@ -192,7 +193,8 @@ transform: translateY(-15px);
 
 .services-section .contents-pc, .services-section .contents-mobile{margin-top:30px; margin-bottom: 70px;}
 .services-section .bg_02{top: 140%; left: -1170px;}
-.services-section .left_text, .services-section .right_text{text-align:center; margin: 20px 0; padding: 0;}
+.services-section .left_text, .services-section .right_text{text-align:center; padding: 0;}
+.services-section .left_text{margin: 20px 0 0;}
 .services-section .contents-mobile .left_img{float: initial;}
 .services-section .btn-group .img-fluid{max-width: 100%;}
 .contact-section{height: 750px;}	
