@@ -1,3 +1,8 @@
+// 새로고침 시 scrollTop(강제) --- 이건 
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0); 
+});
+
 //jQuery to collapse the navbar on scroll
 var header_height  = $('.navbar').height(),
     intro_height    = $('.intro-section').height(),
@@ -74,5 +79,63 @@ jQuery(document).ready(function () {
       e.preventDefault();
       $('html, body').animate({scrollTop: 0}, 300);
     });
+});
+
+
+
+// 
+let isShowing = false;
+let isCSSChanged = false;
+$(window).scroll(function () {
+    let viewportHeight = window.innerHeight;
+	let noticeMarginTop = 150;
+	let noticeOffsetTop = $("#notice").offset().top;
+	let noticeTitleHeight = $("#notice .header_title").height();
+	let noticeHeight = $("#notice").height();
+	
+	let space = 50;
+    let scrollValue = $(document).scrollTop();
+	let showButtonScorllTopPosition = noticeOffsetTop - viewportHeight + noticeMarginTop + noticeTitleHeight;
+		
+	// console.log(scrollValue, showButtonScorllTopPosition);
+		
+	if(scrollValue >= showButtonScorllTopPosition + space) {
+
+		if(isShowing === false) {
+			// 버튼 보이기
+			$('.btn_download_bottom').addClass("show");
+			$('.folat-box').fadeOut(500)
+			isShowing = true;
+			console.log("show");
+		}
+			
+		if(scrollValue >= showButtonScorllTopPosition + noticeHeight) {
+			if(isCSSChanged === false) {
+				isCSSChanged = true;
+				// 위치 변경
+				let currentBottom = parseInt($('.btn_download_bottom.show').css('bottom').replace("px", ""));
+				let changeBottom = currentBottom + 160;
+				$('.btn_download_bottom.show').css('bottom', changeBottom + 'px');
+				console.log("버튼 CSS 변경");
+			}
+		} else {
+			if(isCSSChanged === true) {
+				// 위치 변경 원복
+				$('.btn_download_bottom').css('bottom',"-100px");
+				isCSSChanged = false;
+				console.log("버튼 CSS 변경 원복");
+			}			
+		}
+		
+	} else {
+		if(isShowing === true) {
+			// 버튼 숨기기
+			$('.btn_download_bottom').removeClass("show")
+			$('.folat-box').fadeIn(500)
+			isShowing = false;
+			console.log("hide");
+		}
+	}
+	
 });
 
