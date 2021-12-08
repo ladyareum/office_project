@@ -773,7 +773,7 @@
         <!-- //floatBanner -->
 		<!-- 하단영역 다운로드 팝업 노출 .con_style_column -->
 		<!-- layer PopUp  -->
-		<div class="popup popupDownlad popupDownlad_sm">
+		<div class="popupDownlad popupDownlad_sm">
 			<div class="popup_downlad">
 				<div class="btn-area">
 					<button type="button" class="btn-close" name="close"><span class="close icon-close"></span></button>
@@ -832,7 +832,7 @@
 		if( $(e.target).attr("id") != "navbar") {
 			$('.collapse').removeClass('in');
 		}
-	}); 
+		}); 
 	</script>
 
 	<script>
@@ -856,19 +856,42 @@
 	});
 	</script>
 	<script>
-	// Hide Header on on scroll down 
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 3000) {
-			$(popupDownlad).show();
-		} else {
-			$(popupDownlad).click(function(e) {
-			if ( e.target == this ) {
-				if ($(popupDownlad).is(':visible')) {
-					$(popupDownlad).hide();
-					}
+		// 고객센터 영역부터 플로팅 팝업 노출
+		let isShowing = false;
+		let isCSSChanged = false;
+		$(window).scroll(function () {
+			let viewportHeight = window.innerHeight;
+			let noticeMarginTop = 150;
+			let noticeOffsetTop = $("#notice").offset().top;
+			let noticeTitleHeight = $("#notice .header_title").height();
+			let noticeHeight = $("#notice").height();
+			
+			let space = 50;
+			let scrollValue = $(document).scrollTop();
+			let showPopupScorllTopPosition = noticeOffsetTop - viewportHeight + noticeMarginTop + noticeTitleHeight;
+			
+			// console.log(scrollValue, showButtonScorllTopPosition);
+			if(scrollValue >= showPopupScorllTopPosition + space) {
+				console.log($('.popupDownlad.show').css('bottom'));
+	
+				if(isShowing === false) {
+					// 팝업 보이기
+					$('.popupDownlad').addClass("show").show();
+					isShowing = true;
+					console.log("show");
+				}
+				
+			} else {
+				if(isShowing === true) {
+					// 팝업 숨기기
+					$('.popupDownlad').removeClass("show").hide();
+					isShowing = false;
+					console.log("hide");
 				}
 			}
-		}
-	});	
+			$('.btn-close').click(function(){
+				$('.popupDownlad').removeClass("show").hide();
+			});
+		});
 	</script>
 </html>
