@@ -181,7 +181,7 @@ h7{font-size:11px; font-size: 1.1rem;}
 .pull-right {float: right !important;}
 
 /* Custom Style */
-.btn, a.btn{display: inline-block; position: relative; overflow: hidden; min-width: 68px; min-height: 28px; padding: 4px 20px; font-size: 12px; font-size: 1.2rem; font-weight: 500; line-height: 1.42857143; text-align: center; vertical-align: middle; border-radius:50px; touch-action: manipulation; -webkit-tap-highlight-color: transparent; white-space: nowrap;transition: all .2s ease-in-out;}
+.btn, a.btn{display: inline-block; position: relative; overflow: hidden; min-width: 68px; min-height: 28px; padding: 4px 20px; font-size: 12px; font-size: 1.2rem; font-weight: 500; line-height: 1.42857143; text-align: center; vertical-align: middle; border-radius:50px; touch-action: manipulation; -webkit-tap-highlight-color: transparent; white-space: nowrap;}
 .btn.focus, .btn:focus, .btn:hover{color:#fff;}
 a.btn:hover{text-decoration: none;}
 a.disabled{pointer-events: none;}
@@ -252,7 +252,7 @@ a.disabled{pointer-events: none;}
 .info-list .item-footer .item-right{color:#fff;}
 
 .popup {
-  background: rgba(100, 100, 100, 0.5);
+  background: rgba(0, 0, 0, 0.75);
   position: fixed;
   display: none;
   z-index: 5000;
@@ -294,6 +294,7 @@ a.disabled{pointer-events: none;}
 .popup .popup-body .poup-content .con_style_float .img_left{float: left; margin-bottom: 10px;}
 .popup .popup-body .poup-content .con_style_float .img_left img{max-width: 230px;}
 .popup .popup-body .poup-content .con_style_float .text_right{position: relative; padding-left: 250px;}
+
 
 
 /* Bootstrap Common */

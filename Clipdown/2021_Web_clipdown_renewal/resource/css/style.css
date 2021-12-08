@@ -150,39 +150,201 @@ background: #f5f5f5;
 .icon-download .arrow span{color: #fff; text-decoration: none; padding-top: 0;}
 .arrow {text-align: center; margin-top: 10px;}
 .bounce {
--moz-animation: bounce 2s infinite;
--webkit-animation: bounce 2s infinite;
-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
-0%, 20%, 50%, 80%, 100% {
-transform: translateY(0);
-}
-40% {
-transform: translateY(-30px);
-}
-60% {
-transform: translateY(-15px);
-}
-}
-
-#movetopbt {
-    width: 140px;
-    height: 28px;
-    background-color: red;
-    color: white;
-    cursor: pointer;
+  0%, 20%, 50%, 80%, 100% {
+  transform: translateY(0);
   }
+  40% {
+  transform: translateY(-30px);
+  }
+  60% {
+  transform: translateY(-15px);
+  }
+}
 
-
-.btn_download_bottom{position: fixed; width: 100%; left: 0; bottom: 0; text-align: center; z-index: 9999;}
+/* 하단영역 다운로드 버튼 노출 */
+.btn_download_bottom{position: fixed; width: 100%; left: 0; bottom: 0; text-align: center; z-index: 999;}
 .btn_download_bottom{bottom: -100px;  transition:bottom .5s;}
 .btn_download_bottom.show{bottom: 40px;}
-.btn_download_bottom a{border-color: transparent !important; box-shadow:rgba(0, 0, 0, 0.05) 0 0 5px 3px;}
+.btn_download_bottom a{box-shadow: 0px 2px 5px rgb(26 0 35 / 5%), 0px 10px 10px rgb(0 0 0 / 15%); transition: all .2s ease-in-out;}
+.btn_download_bottom .icon-download{float: left;}
+.btn_download_bottom .info-text{display: inline-block; color:#fff; font-size: 26px; font-size: 2.6rem; font-weight: 500; line-height: 1.5; padding-top: 6px; padding-left: 10px;}
+.btn-grad{background-image: linear-gradient(to right, #e31d19 0%, #ff3733  51%, #e31d19  100%); background-color: #e31d19; border-color:transparent; color:#fff;}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+.btn-grad:active{background-color: #e31d19;}
+
+/* 하단영역 다운로드 팝업 노출 */
+.popupDownlad{display: block;}
+.popupDownlad > div {
+  max-width: 720px;
+  width: 90%;
+  position: fixed;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background: #e21d19;
+  z-index: 99999;
+  text-align: center;
+  border: 0;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+}
+.popupDownlad_sm > div{max-width: 600px;}
+.popup_downlad .popup-body{text-align: center;}
+.popup_downlad .popup-content{background-color: #fff; border-radius: 10px;}
+.popup_downlad .btn_download_popup .btn{overflow: unset;}
+.popup_downlad .btn-area{position:absolute; top:10px; right:25px; padding:14px 0;}
+.popup_downlad .btn-area .btn-close{display: inline-block; vertical-align: middle; background:transparent; width: 28px; height: 28px; padding:0;}
+.popup_downlad .btn-area .btn-close:focus{outline:0;}
+.popup_downlad .btn-area .btn-close .close{display: inline-block; position: relative; overflow: hidden; width: 28px; height: 28px; opacity: 1;}
+.popup_downlad .btn-area .btn-close .close:before,  
+.popup_downlad .btn-area .btn-close .close:after{content: ''; position: absolute; width: 100%; height:2px; top:50%; right:0; background:#fff;}
+.popup_downlad .btn-area .btn-close .close:before{-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
+.popup_downlad .btn-area .btn-close .close:after{-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+
+/* popup Style flex Row */
+.con_style_row{display: flex; align-items: center; width: 100%; height: 100%; padding:0;}
+.con_style_row .con_left{display: flex; align-items: center; flex-direction: column; width: 60%; height: 100%; overflow: hidden; background-color: #e21d19; padding: 20px;}
+.con_style_row .con_right{display: flex; align-items: center; flex-direction: column; width: 40%; height: 100%; background-color: #fff; border-radius: 20px; margin:20px 40px 20px 0; padding: 60px 20px;}
+.con_style_row .con_left .header_title{font-size: 2.6rem; font-weight: 400; color:#fff;}
+.con_style_row .con_left .header_title ul{padding:20px 10px;}
+.con_style_row .con_left .header_title ul li{font-size: 20px; font-weight: 300; line-height: 1.8;}
+.con_style_row .box_icon{width: 5.2rem; height: 5.2rem; background-color: transparent; text-align: center; border-radius: 10px; margin-bottom: 20px;}
+.con_style_row .box_icon .icon-download .arrow span{font-size: 48px; color:#e21d19;}
+.con_style_row .info_clipdown{font-size: 1.8rem; line-height: 1.6; text-align: center; margin: 10px 0;}
+.con_style_row .btn-grad{font-size: 1.8rem; padding: 10px 45px;}
+.con_style_row .btn-area{top:10px; right:10px; padding: 0;}
+.con_style_row .btn-area .btn-close{width: 20px; height: 20px;}
+.con_style_row .btn-area .btn-close .close:before,  
+.con_style_row .btn-area .btn-close .close:after{background: #fff;}
+.con_style_row .btn-area .btn-close .close{width: 20px; height: 20px;}
+
+/* popup Style flex Coulm */
+.con_style_column{display: flex; flex-direction: column; align-items: center; width: 100%; height:100%; padding: 0;}
+.con_style_column .con_left{width: 100%; overflow: hidden; background-color: #fff; text-align: center; padding: 40px 40px 0 40px;}
+.con_style_column .con_right{width: 100%; background-color: #e21d19; text-align: center;}
+.con_style_column .con_left .img_clipdown{position: relative; overflow: hidden; width: 100%; max-width:448px; margin: 0 auto; }
+.con_style_column .con_left .header_title{font-size: 2.2rem; font-weight: 300; line-height: 1.4; color:#444;}
+.btn_download_popup .btn-bottom{width:100%; min-height: 48px; font-size: 1.8rem; border-radius: 0;  box-shadow:unset; margin:0; padding: 20px 10px;}
+.popup_downlad .btn-area .btn-close .close:before, .popup_downlad .btn-area .btn-close .close:after{background: #444;}
 
 
+/* button Bubbley Animation */
+.btn_download_popup .bubbly-button{display: inline-block; position: relative; overflow: unset; background-color: #e21d19; font-size: 1em; color: #fff; border-radius: 4px; border: none; 
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s; box-shadow: 0 2px 25px rgb(255 0 130 / 50%); padding: 1em 2em;}
+.btn_download_popup .bubbly-button:focus {
+  outline: 0;
+}
+.btn_download_popup .bubbly-button:before, .btn_download_popup .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.btn_download_popup .bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, transparent 20%, #e21d19 20%, transparent 30%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, transparent 10%, #e21d19 15%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
+}
+.btn_download_popup .bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, transparent 10%, #e21d19 15%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%), radial-gradient(circle, #e21d19 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+.btn_download_popup .bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #f02f2c;
+  box-shadow: 0 2px 25px rgba(255 0 130, 0.2);
+}
+.btn_download_popup .bubbly-button.animate:before {
+  display: block;
+  -webkit-animation: topBubbles ease-in-out 0.75s forwards;
+          animation: topBubbles ease-in-out 0.75s forwards;
+}
+.btn_download_popup .bubbly-button.animate:after {
+  display: block;
+  -webkit-animation: bottomBubbles ease-in-out 0.75s forwards;
+          animation: bottomBubbles ease-in-out 0.75s forwards;
+}
 
+@-webkit-keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@-webkit-keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
 
 /* Media Query */
 @media screen and (max-width: 767px){

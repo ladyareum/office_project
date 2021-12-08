@@ -771,22 +771,9 @@
             </a>
         </div> 
         <!-- //floatBanner -->
-		<!-- 하단영역부터 다운로드버튼 중앙정렬 -->
-		<div class="btn_download_bottom">
-			<div class="btn-box">				
-				<a class="btn btn-lg btn-grad" href="http://down.clipdown.co.kr/launcher/5/clipdown_setup_5.exe" download="newfilename">
-					<div class="icon-download">
-						<div class="arrow bounce">
-							<span class="fa fa-arrow-down fa-2x"></span>
-						</div> 
-					</div>
-					<div class="info-text">클립다운 다운로드</div>
-				</a>
-			</div>
-		</div> <!-- //하단영역 다운로드버튼 중앙정렬 -->
-		<!-- 하단영역 다운로드 팝업 노출 -->
+		<!-- 하단영역 다운로드 팝업 노출 .con_style_column -->
 		<!-- layer PopUp  -->
-		<div class="popup popupDownlad popupDownlad_sm" style="display: block;">
+		<div class="popup popupDownlad popupDownlad_sm">
 			<div class="popup_downlad">
 				<div class="btn-area">
 					<button type="button" class="btn-close" name="close"><span class="close icon-close"></span></button>
@@ -794,26 +781,18 @@
 				<div class="popup-body con_style_column">
 					<div class="poup-content con_left">
 						<h1 class="header_title">
-							<span class="text-block" style="letter-spacing: 1px;">모든 것을 <span class="">한번에!</span></span>
-							<span class="text-block ">유튜브 <span class="t">ONE-STOP</span></span>
-							<span class="text-block">프로그램 <span class="">클립다운</span></span>
+							<span class="text-block">이제 광고 없이 시청하고</span>
+							<span class="text-block mb-10">간편하게 다운로드할 수 있습니다!</span>
+							<span class="text-block point-color">원하는 영상과 음원을 소장하고</span>
+							<span class="text-block point-color">광고 없이 편하게 시청하세요.</span>
 						</h1>
+						<div class="img_clipdown">
+							<img src="resource/images/img_popup_01.png" class="img-fluid">
+						</div>
 					</div>
 					<div class="poup-content con_right">
-						<div class="box_icon hide">
-							<div class="icon-download">
-								<div class="arrow bounce">
-									<span class="fa fa-arrow-down fa-2x"></span>
-								</div> 
-							</div>
-						</div>
-						<div class="info_clipdown">
-							클릭 한 번으로<br />
-							동영상과 음원을 소장하세요!
-						</div>
-						<div class="btn_download_popup"> 
-							<a class="btn bubbly-button" href="#" download="newfilename" style="display: none;">클립다운 다운로드</a> <!-- button Bubbley  -->
-							<a class="btn btn-lg btn-grad" href="#" download="newfilename">클립다운 다운로드</a>
+						<div class="btn_download_popup">
+							<a class="btn btn-bottom btn-grad" href="#" download="newfilename">클립다운 다운로드</a>
 						</div>
 						
 					</div>
@@ -875,5 +854,21 @@
 			playButton.style.display = "block";
 		}
 	});
+	</script>
+	<script>
+	// Hide Header on on scroll down 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 3000) {
+			$(popupDownlad).show();
+		} else {
+			$(popupDownlad).click(function(e) {
+			if ( e.target == this ) {
+				if ($(popupDownlad).is(':visible')) {
+					$(popupDownlad).hide();
+					}
+				}
+			}
+		}
+	});	
 	</script>
 </html>

@@ -1,4 +1,4 @@
-// 새로고침 시 scrollTop(강제) --- 이건 
+// 새로고침 시 scrollTop(강제) 
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0); 
 });
@@ -81,9 +81,7 @@ jQuery(document).ready(function () {
     });
 });
 
-
-
-// 
+// 스크롤 시 하단영역 버튼 중앙 노출
 let isShowing = false;
 let isCSSChanged = false;
 $(window).scroll(function () {
@@ -97,13 +95,15 @@ $(window).scroll(function () {
     let scrollValue = $(document).scrollTop();
 	let showButtonScorllTopPosition = noticeOffsetTop - viewportHeight + noticeMarginTop + noticeTitleHeight;
 		
-	// console.log(scrollValue, showButtonScorllTopPosition);
+	 console.log(scrollValue, showButtonScorllTopPosition);
 		
 	if(scrollValue >= showButtonScorllTopPosition + space) {
+		
+		console.log($('.btn_download_bottom.show').css('bottom'));
 
 		if(isShowing === false) {
 			// 버튼 보이기
-			$('.btn_download_bottom').addClass("show");
+			$('.btn_download_bottom').addClass("show").show();
 			$('.folat-box').fadeOut(500)
 			isShowing = true;
 			console.log("show");
@@ -114,14 +114,17 @@ $(window).scroll(function () {
 				isCSSChanged = true;
 				// 위치 변경
 				let currentBottom = parseInt($('.btn_download_bottom.show').css('bottom').replace("px", ""));
-				let changeBottom = currentBottom + 160;
+				let changeBottom = currentBottom + 180;
 				$('.btn_download_bottom.show').css('bottom', changeBottom + 'px');
 				console.log("버튼 CSS 변경");
 			}
 		} else {
 			if(isCSSChanged === true) {
 				// 위치 변경 원복
-				$('.btn_download_bottom').css('bottom',"-100px");
+				let currentBottom = parseInt($('.btn_download_bottom.show').css('bottom').replace("px", ""));
+				let changeBottom = currentBottom - 180;
+
+				$('.btn_download_bottom').css('bottom', changeBottom + 'px');
 				isCSSChanged = false;
 				console.log("버튼 CSS 변경 원복");
 			}			
@@ -130,7 +133,7 @@ $(window).scroll(function () {
 	} else {
 		if(isShowing === true) {
 			// 버튼 숨기기
-			$('.btn_download_bottom').removeClass("show")
+			$('.btn_download_bottom').removeClass("show").hide();
 			$('.folat-box').fadeIn(500)
 			isShowing = false;
 			console.log("hide");
@@ -138,4 +141,64 @@ $(window).scroll(function () {
 	}
 	
 });
+
+// 스크롤 시 하단영역 팝업 노출
+let isShowing = false;
+let isCSSChanged = false;
+$(window).scroll(function () {
+    let viewportHeight = window.innerHeight;
+	let noticeMarginTop = 150;
+	let noticeOffsetTop = $("#notice").offset().top;
+	let noticeTitleHeight = $("#notice .header_title").height();
+	let noticeHeight = $("#notice").height();
+	
+	let space = 50;
+    let scrollValue = $(document).scrollTop();
+	let showPopupScorllTopPosition = noticeOffsetTop - viewportHeight + noticeMarginTop + noticeTitleHeight;
+		
+	 console.log(scrollValue, showButtonScorllTopPosition);
+		
+	if(scrollValue >= showPopupScorllTopPosition + space) {
+		
+		console.log($('.popupDownlad.show').css('bottom'));
+
+		if(isShowing === false) {
+			// 버튼 보이기
+			$('.popupDownlad').addClass("show").show();
+			isShowing = true;
+			console.log("show");
+		}
+			
+		if(scrollValue >= showButtonScorllTopPosition + noticeHeight) {
+			if(isCSSChanged === false) {
+				isCSSChanged = true;
+				// 위치 변경
+				let currentBottom = parseInt($('.popupDownlad.show').css('bottom').replace("px", ""));
+				let changeBottom = currentBottom + 180;
+				$('.popupDownlad.show').css('bottom', changeBottom + 'px');
+				console.log("버튼 CSS 변경");
+			}
+		} else {
+			if(isCSSChanged === true) {
+				// 위치 변경 원복
+				let currentBottom = parseInt($('.popupDownlad.show').css('bottom').replace("px", ""));
+				let changeBottom = currentBottom - 180;
+
+				$('.popupDownlad').css('bottom', changeBottom + 'px');
+				isCSSChanged = false;
+				console.log("버튼 CSS 변경 원복");
+			}			
+		}
+		
+	} else {
+		if(isShowing === true) {
+			// 버튼 숨기기
+			$('.popupDownlad').removeClass("show").hide();
+			isShowing = false;
+			console.log("hide");
+		}
+	}
+	
+});
+
 
