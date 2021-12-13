@@ -404,7 +404,7 @@ background: #f5f5f5;
 .btn-win{display: none;}
 .btn_download_bottom.show{display: none !important;}
 
-.m-btn-box.btn_fixed{position: fixed; left:0; z-index: 999;}
+.m-btn-box.btn_fixed{position: fixed; left:0; z-index: 999; }
 .m-btn-box.btn_fixed .m_btn{box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;}
 }
 
@@ -416,6 +416,7 @@ background: #f5f5f5;
 .btn-md{min-height: 34px !important; font-size: 16px !important; line-height: 1.6; padding: 8px 12px !important;}
 /* .m-btn-box{margin: 20px 0;} */
 /* .m-btn-box .m_btn{display: block; width: 70%; margin: 20px auto;} */
+.m-btn-box.btn_fixed{bottom: 40px;}
 .left_img, .right_img{width:100% !important;}
 .content_info{margin: 25px 0;}
 .slick-dotted.slick-slider{margin-bottom: 10px;}
