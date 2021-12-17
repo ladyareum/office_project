@@ -902,18 +902,17 @@
 	
 		</script>
 		<script>
-			$(function(){
-   				var btnFix = $('.m-btn-box').offset().top;
-   					$(window).scroll(function(){
-					if($(window).scrollTop() >= btnFix) {
-						$('.m-btn-box').addClass('btn_fixed');
-						//$('.btn_fixed').css('position','fixed');
-						//$('.btn_fixed').css('bottom','');
-						} else {
-						$('.m-btn-box').removeClass('btn_fixed');
-						//$('.btn_fixed').css('position','');	
-					}
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 300) {
+					$('.m-btn-box').addClass('btn_fixed');
+				} else {
+					$('.m-btn-box').removeClass('btn_fixed');
+				}
 				});
+				$('.m-btn-box.btn_fixed').click(function (e) {
+				e.preventDefault();
+				$('html, body').animate({scrollTop: 0}, 300);
 			});
+			
 		</script>
 </html>
