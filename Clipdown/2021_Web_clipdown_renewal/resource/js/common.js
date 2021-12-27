@@ -69,15 +69,15 @@ $(document).ready(function () {
 // Scroll to Top
 jQuery(document).ready(function () {
     $(window).scroll(function () {
-      if ($(this).scrollTop() > 300) {
+      if ($(this).scrollTop() > 600) {
         $('.back-to-top').fadeIn(500);
       } else {
-        $('.back-to-top').fadeOut('slow');
+        $('.back-to-top').fadeOut(300);
       }
     });
     $('.back-to-top').click(function (e) {
       e.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 300);
+      $('html, body').animate({scrollTop: 0}, 500);
     });
 });
 
