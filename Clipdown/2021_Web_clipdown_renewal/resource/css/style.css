@@ -388,6 +388,7 @@ background: #f5f5f5;
 .uselist-section .col-4{width: 50%;}
 .uselist-section .item_box{max-width: 280px;} 
 .uselist-section .content_info{margin: 20px 0;}
+.notice-section{padding-bottom: 20px;}
 .notice-section .tabs-menu{margin:60px 0 0;}
 .tabs_faq .nav-tab{border-bottom:0; padding: 0;}
 .tabs_faq .nav-tab li{float:left; width:33.33%; text-align: center; margin-top: 0; padding: 10px 10px;}	/* tab 메뉴3개만보임 */
@@ -416,10 +417,10 @@ background: #f5f5f5;
   }
 }
 
-.m_download_bottom{position: fixed; width: 100%; left: 0; background: #fff; text-align: center; padding:20px 0; z-index: 9999;}
-.m_download_bottom{bottom: -100px;  transition:bottom .5s;}
+.m_download_bottom{position: fixed; width: 100%; left: 0; background: #fff; text-align: center; padding:20px 0; z-index: 999;}
+.m_download_bottom{bottom: -100px;}
 .m_download_bottom.show{display:block; bottom: 0;}
-.m_download_bottom.fixed{position: relative; bottom: 50px !important;}
+.m_download_bottom.fixed{position: relative;}
 .m_download_bottom .m_btn{display: inline-block; position: relative; width: 40%;}
 
 
