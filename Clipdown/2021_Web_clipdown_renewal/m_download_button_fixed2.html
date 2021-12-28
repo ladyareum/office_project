@@ -715,7 +715,15 @@
 					</div>
 				</div>
 			</div>
-		</section>	
+		</section>
+		<div class="m_download_bottom">
+			<div class="btn-box">
+				<div class="btn-group">				
+					<a class="m_btn" href="#"><img class="img-fluid" src="./resource/images/btn_onestore.png" width="170px" height="50px" alt="onestore"></a>
+					<a class="m_btn" href="#"><img class="img-fluid" src="./resource/images/btn_galaxystore.png" width="170px" height="50px" alt="galaxystore"></a>
+				</div>
+			</div>
+		</div>	
 		<footer class="footer-section">
             <div class="container"> 
                 <div class="row">
@@ -771,28 +779,6 @@
             </a>
         </div> 
         <!-- //floatBanner -->
-		<!-- 하단영역부터 다운로드버튼 중앙정렬 -->
-		<div class="btn_download_bottom">
-			<div class="btn-box">				
-				<a class="btn btn-lg btn-grad" href="http://down.clipdown.co.kr/launcher/5/clipdown_setup_5.exe" download="newfilename">
-					<div class="icon-download">
-						<div class="arrow bounce">
-							<span class="fa fa-arrow-down fa-2x"></span>
-						</div> 
-					</div>
-					<div class="info-text">클립다운 다운로드</div>
-				</a>
-			</div>
-		</div> <!-- //하단영역 다운로드버튼 중앙정렬 -->
-		<div class="m_download_bottom">
-			<div class="btn-box">
-				<div class="btn-group">				
-					<a class="m_btn" href="#"><img class="img-fluid" src="./resource/images/btn_onestore.png" width="170px" height="50px" alt="onestore"></a>
-					<a class="m_btn" href="#"><img class="img-fluid" src="./resource/images/btn_galaxystore.png" width="170px" height="50px" alt="galaxystore"></a>
-				</div>
-			</div>
-			
-		</div>
 	</body>
 	
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
@@ -800,6 +786,8 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
 	<script src="./resource/js/common.js"></script>
 	<script src="./resource/js/jquery.bpopup.min.js"></script>
+	<script src="http://www.clipdown.net/common_resource/js/qna-data.js"></script>
+	<script src="http://www.clipdown.net/common_resource/js/index.js"></script>
 	<script>
 	var animateButton = function(e) {
 	
@@ -848,44 +836,74 @@
 	});
 	</script>
 	<script>
-		// 스크롤 시 하단 중앙영역 다운로드 노출
-		let isShowing = false;
-		let isCSSChanged = false;
-		$(window).scroll(function () {
-			let viewportHeight = window.innerHeight;
-			let aboutMarginTop = 600;
-			let aboutOffsetTop = $("#about").offset().top;
-			let aboutTitleHeight = $("#about .header_title").height();
-			let aboutHeight = $("#about").height();
-			
-			let space = 50;
-			let scrollValue = $(document).scrollTop();
-			let showButtonScorllTopPosition = aboutOffsetTop - viewportHeight + aboutMarginTop + aboutTitleHeight;
-				
-			// console.log(scrollValue, showButtonScorllTopPosition);
-			if (document.body.clientWidth < 767) {
+		// 모바일 일때 스크롤 시 하단 중앙영역 다운로드 노출
+		(function() {
+			$(document).ready(function () {
+				setFloatingButton();
+			});
 
-				if(scrollValue >= showButtonScorllTopPosition + space) {
-				
-				console.log($('.m_download_bottom.show').css('bottom'));
-	
-					if(isShowing === false) {
-						// 버튼 보이기
-						$('.m_download_bottom').addClass("show").show();
-						isShowing = true;
-						console.log("show");
-					}
-				} else {
-					if(isShowing === true) {
-						// 버튼 숨기기
-						$('.m_download_bottom').removeClass("show").hide();
-						isShowing = false;
-						console.log("hide");
-					}
+			function setFloatingButton() {
+
+				if(isMobile() === true) {
+					return;
 				}
+
+				let isShowing = false;
+				let isCSSChanged = false;
+
+				let viewportHeight = window.innerHeight;
+				let aboutMarginTop = 430;
+				let aboutOffsetTop = $("#about").offset().top;
+				let aboutTitleHeight = $("#about .header_title").height();
+				let aboutHeight = $("#about").height();
+
+				let space = 50;
+				let showButtonScrollTopPosition = aboutOffsetTop - viewportHeight + aboutMarginTop + aboutTitleHeight;
+
+				$(window).scroll(function () {
+					// console.log($('.m_download_bottom').css('bottom'));
+					let scrollValue = $(document).scrollTop();
+
+					if(scrollValue >= showButtonScrollTopPosition + space) {
+
+						if(isShowing === false) {
+							// 버튼 보이기√
+							$('.m_download_bottom').css('bottom', "0");
+							$('.m_download_bottom').fadeIn(500);
+
+							//$('.folat-box').fadeOut(500)
+							isShowing = true;
+							// console.log("show");
+						}
+
+						if(scrollValue >= showButtonScrollTopPosition + aboutHeight) {
+							if(isCSSChanged === false) {
+								// 위치 변경
+								isCSSChanged = true;
+								//$('.m_download_bottom').addClass("fixed");
+								// console.log("버튼 CSS 변경");
+							}
+						} else {
+							if(isCSSChanged === true) {
+								// 위치 변경 원복
+								isCSSChanged = false;
+								//$('.m_download_bottom').removeClass("fixed");
+								// console.log("버튼 CSS 변경 원복");
+							}
+						}
+
+					} else {
+						if(isShowing === true) {
+							// 버튼 숨기기
+							$('.m_download_bottom').fadeOut(500)
+							//$('.folat-box').fadeIn(500)
+							isShowing = false;
+							// console.log("hide");
+						}
+					}
+				});
 			}
-			
-		});
+		})();
 	
 		</script>
 </html>
