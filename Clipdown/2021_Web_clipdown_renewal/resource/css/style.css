@@ -354,7 +354,7 @@ background: #f5f5f5;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
-.m_download_bottom{display: none;}
+.m_download_bottom .btn-box{display: none;}
 
 /* Media Query */
 @media screen and (max-width: 767px){
@@ -427,6 +427,7 @@ background: #f5f5f5;
 .m_download_bottom{bottom: -100px;}
 .m_download_bottom.show{display:block; bottom: 0;}
 .m_download_bottom.fixed{position: relative;}
+.m_download_bottom .btn-box{display:block;}
 .m_download_bottom .m_btn{display: inline-block; position: relative; width: 40%;}
 
 }
