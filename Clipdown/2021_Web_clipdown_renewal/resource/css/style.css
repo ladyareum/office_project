@@ -469,5 +469,11 @@ background: #f5f5f5;
 .services-section .m-btn-box .btn-group .img-fluid{width: 160px;}
 }
 
+/* 1230 클립다운 홈페이지 브라우저별 런처파일 실행 안내팝업 작업 */
+.popup_install{display: block; position: fixed; height: 100%; width: 100%; left: 0; top: 0; background: rgba(0, 0, 0, 0.75); z-index: 5000;}
+.popup_install img{max-width: 100%;}
+.popup_install .popup-content{position: fixed; left: 0; bottom: 0; z-index: 5001;}
+.popup_install .popup-content .install-info{display: inline-block; width: 100%; transform: translate(20px, -20px); -webkit-transform: translate(20px, -20px);}
+.popup_install .popup-content .install-info.center{max-width: 340px; position: fixed; top: 50%; left: 50%;-webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; z-index: 5001;} 
 
 
