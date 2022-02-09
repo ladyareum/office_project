@@ -51,6 +51,8 @@
     .download_guide .section_browser .img_box{padding-bottom: 10px;}
     .download_guide .section_browser .img_browser_chrome .content_ani{left: 14%; bottom: 16%;}
     .download_guide .section_browser .img_browser_ie .content_ani{left: 40%; bottom: 16%;}
+    .download_guide .section_install-info .col-img .ani_cursor.point1{left: 15%; bottom: -9%;}
+    .download_guide .section_install-info .col-img .ani_cursor{right: 5%; bottom: -19%;}
 }
 
 @media screen and (max-width: 320px){
