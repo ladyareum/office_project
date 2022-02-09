@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* 20220208 클립다운 설치안내 페이지 */
+.download_guide{position: relative;}
+.download_guide .content_ani{display: inline-block; position: relative;}
+
+.download_guide .download_section{position: relative; overflow: hidden; width: 100%; text-align: center; padding: 60px 0;}
+.download_guide .section_top{top:60px;}
+.download_guide .content-header h1{font-size:42px; font-size: 4.2rem; color: #19487E;}
+.download_guide .img_box svg{max-width: 100%; height: auto; -ms-interpolation-mode:bicubic;}
+
+.download_guide .content-header .content-text{font-size:18px; font-size: 1.8rem; color: #E41D19;}
+.download_guide .section_browser{background-color: #19487E;}
+.download_guide .section_browser .content-header h1{font-size:36px; font-size: 3.6rem; color: #fff;}
+.download_guide .section_browser .content-header .content-text{color: #fff;}
+.download_guide .section_browser .img_box .content_ani{position: absolute;}
+.download_guide .section_browser .img_browser_chrome .content_ani{left: 14%; bottom: 16%;}
+.download_guide .section_browser .img_browser_ie .content_ani{left: 45%; bottom: 16%;}
+.download_guide .section_browser .img_browser_ect .content_ani{right: 16%; top: 32%; -webkit-transform: rotate(180deg); transform: rotate(180deg);}
+
