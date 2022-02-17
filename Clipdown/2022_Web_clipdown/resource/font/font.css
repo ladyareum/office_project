@@ -5,7 +5,7 @@ font-family:'SCDream';
 font-style:normal;
 font-weight:100;
 src:local('SCDream1Thin'), local('SCDream 1 Thin'),
-	url(SCDream1Thin.otf) format('opentype');
+	url(SCDream1Thin.ttf) format('opentype');
 }
 
 @font-face {
@@ -13,7 +13,7 @@ font-family:'SCDream';
 font-style:normal;
 font-weight:200;
 src:local('SCDream2ExtraLight'), local('SCDream 2 ExtraLight'),
-	url(SCDream2ExtraLight.otf) format('opentype');
+	url(SCDream2ExtraLight.ttf) format('opentype');
 }
 
 @font-face {
@@ -21,7 +21,7 @@ font-family:'SCDream';
 font-style:normal;
 font-weight:300;
 src:local('SCDream3Light'), local('SCDream 3 Light'),
-	url(SCDream3Light.otf) format('opentype');
+	url(SCDream3Light.ttf) format('opentype');
 }	
 
 @font-face {
@@ -29,7 +29,7 @@ font-family:'SCDream';
 font-style:normal;
 font-weight:400;
 src:local('SCDream4Regular'), local('SCDream 4 Regular'),
-	url(SCDream4Regular.otf) format('opentype');
+	url(SCDream4Regular.ttf) format('opentype');
 }
 
 @font-face {
@@ -37,7 +37,7 @@ font-family:'SCDream';
 font-style:normal;
 font-weight:500;
 src:local('SCDream5Medium'), local('SCDream 5 Medium'),
-	url(SCDream5Medium.otf) format('opentype');
+	url(SCDream5Medium.ttf) format('opentype');
 }
 
 @font-face {
@@ -45,7 +45,7 @@ font-family:'SCDream';
 font-style:normal;
 font-weight:600;
 src:local('SCDream6Bold'), local('SCDream 6 Bold'),
-	url(SCDream6Bold.otf) format('opentype');
+	url(SCDream6Bold.ttf) format('opentype');
 }
 
 @font-face {
@@ -53,7 +53,7 @@ font-family:'SCDream';
 font-style:normal;
 font-weight:700;
 src:local('SCDream7ExtraBold'), local('SCDream 7 ExtraBold'),
-	url(SCDream7ExtraBold.otf) format('opentype');
+	url(SCDream7ExtraBold.ttf) format('opentype');
 }
 
 @font-face {
@@ -61,12 +61,12 @@ font-family:'SCDream';
 font-style:normal;
 font-weight:800;
 src:local('SCDream8Heavy'), local('SCDream 8 Heavy'),
-	url(SCDream8Heavy.otf) format('opentype');
+	url(SCDream8Heavy.ttf) format('opentype');
 }
 @font-face {
 font-family:'SCDream';
 font-style:normal;
 font-weight:900;
 src:local('SCDream9Black'), local('SCDream 9 Black'),
-	url(SCDream9Black.otf) format('opentype');
+	url(SCDream9Black.ttf) format('opentype');
 }
