@@ -8,8 +8,8 @@
 .wrap{position: relative; width: 100%; height: 100%;}
 /* webview popup info style */
 .webview_info .inner{position: relative; max-width: 390px; width: 100%; height:100%; margin: 0 auto;}
-.webview_info .webview_box{width: 100%; height: 100%; text-align: center; padding: 30px 30px;}
-.webview_info .webview_box .content_info_message{position: absolute; top:50%; left:50%; width: 100%; transform: translate(-50%, -50%);}
+.webview_box{width: 100%; height: 100%; text-align: center; padding: 30px 30px;}
+.webview_box .content_info_message{position: absolute; top:50%; left:50%; width: 100%; transform: translate(-50%, -50%);}
 .content_info_message .text_message p{font-size: 14px; font-size: 1.4rem; line-height: 1.6; padding-bottom: 15px;}
 .content_info_message .guide_text{font-size: 12px; font-size: 1.2rem; color: #757575; padding-top: 5px;}
 .content_info_message .btn_area{position: relative; width: 100%; text-align: center; padding-top: 30px;}
