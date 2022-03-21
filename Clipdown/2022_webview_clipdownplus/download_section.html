@@ -7,7 +7,9 @@
     <title>유튜브 구간 다운로드</title>
     <style>
         input::placeholder{color:#ddd;}
-        input:focus::-webkit-input-placeholder {color:transparent; }
+        input:focus::-webkit-input-placeholder {color:transparent;}
+        input:read-only{background-color: #fff; color: #333; cursor: default;}
+        input:read-only:focus{border-color:#ccc;}
         *:focus{outline: 1px dotted #ddd;}
         .btn{display: inline-block; min-width: 68px; min-height: 26px; padding: 0 5px; font-family: 'Noto Sans KR', Helvetica, sans-serif; font-size: 14px; text-align: center; line-height: 1.4; border-radius: 0; cursor: pointer; transition: all .2s ease-in-out;}
         .form-control{display: inline-block; width: 5%; min-width:25px; height: 24px; font-size: 13px; text-align: center; border: 1px solid #ccc; padding: 0 5px;}
@@ -40,7 +42,7 @@
                     </div>
                     <div id="optionDownload" class="option_download">
                         <span class="op_name">시간설정</span>
-                        <input type="text" id="tiem" maxlength="4" class="form-control" placeholder="hh" value="">
+                        <input type="text" id="tiem" maxlength="4" class="form-control" placeholder="" readonly value="00">
                         <span class="empty-2">:</span>
                         <input type="text" id="tiem" maxlength="4" class="form-control" placeholder="mm" value="">
                         <span class="empty-2">:</span>

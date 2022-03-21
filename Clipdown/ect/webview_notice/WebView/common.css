@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+html, body{margin: 0; padding: 0; } 
+body, button, input, select, table, textarea{font-size:15px; line-height:1.5; font-family:'나눔바른고딕','Nanum Barun Gothic', 나눔고딕 , NanumGothic ,'맑은 고딕', arial, sans-serif; color:#444; -webkit-text-size-adjust:none;}
+body{height: 100%; overflow-x: hidden; background-color:#f5f5f5; word-break: break-all; word-wrap: break-word;}
+iframe,fieldset,img{border:0;-ms-interpolation-mode:bicubic;}
+menu,ul,ol{list-style:none;}
+li {list-style:none;}
+img,a{border:0;}
+img, video{max-width:100%; height:100%;}
+video{min-width:100%;}
+a {text-decoration:none;}
+button{border: 0;}
+*, *:before, *:after{box-sizing: border-box;} /* Normalize styles */
+::-webkit-scrollbar {width: 0px; height: 0px; border: 0px; }
+
+.text-ellipsis{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-o-text-overflow: ellipsis;}
+.clear{zoom: 1;}
+
+.header{position:relative; width: 100%;}
+.header .gnb{height:44px; background-color:#f2db38; margin: 0 auto; padding: 0;text-align: center;}
+.header .gnb h1{position:relative; font-size:1.4em; line-height:44px;}
+.header .gnb .brand-logo{}
+.container{position:relative; overflow:hidden; background-color: #fff;}
+.contents{position:relative; width:100%; padding: 20px;}
+.text-header{font-size:16px; font-weight:bold; margin-bottom: 20px;}
+.text-contents{position: relative; padding-bottom: 30px;}
+.text-contents span{display: inline-block; padding: 10px 0;}
+.text-contents a{display: block; color:#8b9e1c;}
+.text-contents .user{display: inline-block; padding-right: 5px; color: #8b9e1c; font-weight: bold; text-decoration: underline;}
+.text-bold{font-weight:bold;}
+.form-group{position:relative; overflow:hidden; margin-bottom:20px; text-align: center;}
+.form-group .form-control{width:100%; height:40px; margin-bottom:10px; border:2px solid #2e2e2e; padding:5px 10px; font-size:15px;}
+.btn-style{width:30%; height:40px; background:#f2db38; border:2px solid #2e2e2e; margin: 15px 0;}
+.footer{padding:10px 20px; background:#f5f5f5; text-align: center;}
+.footer p{font-size:12px; color:#999; vertical-align: middle;}
+
+/* text-contents rule */
+.rule-header{font-size:18px; font-weight:bold; margin-bottom:20px;}
+.rule-contents{/* white-space:pre-line !important; */ position: relative; font-size:14px; padding-bottom: 30px;}
+.rule-info{margin-bottom:20px;}
+.rule-contents p{margin:10px 0 20px;}
+.rule-contents ul{margin:10px 0 30px;}
+.rule-contents ul li{margin-bottom: 6px;}
+.rule-contents ul li ol{margin:10px 0 15px;}
+.rule-contents ul li ol li{margin-bottom: 0;}
+.rule-contents ul li ol li ol{margin:5px 0 10px 15px;}
+
+ /* accordion  */
+.accordion-list{position: relative; width:100%;}
+.accordion-list .list-title{display:block; position:relative; padding:10px 0; cursor: pointer; border-bottom:1px solid #ddd; z-index:10; margin-top:-1px; overflow:hidden; cursor: pointer;}
+.accordion-list .list-title .text{width: 90%; margin-left:5px; display:inline-block; font-size: 16px;}
+.accordion-list .list-content{height: 100%; background:#f8f8f8; padding:10px 10px 40px; border-bottom: 1px solid #ddd;}
+.accordion-list .list-content p{font-size: 14px;}
+
+/* icon  */
+.icon{display: block; position: relative; overflow: hidden; width:24px; height:24px; float: right;}
+.icon-up{vertical-align: middle; background-image:url(icon-up.png);}
+.icon-down{vertical-align: middle; background-image:url(icon-down.png);}
+
+/* @media screen and (max-width:640px){ */
+@media
+screen and (max-device-width:767px), /* iphone, android */
+screen and (max-width:767px) and (-webkit-min-device-pixel-ratio:2) /* lg g 맞춤. */ {
+	/* .icon{ width:48px; height:48px;}
+	.icon-up{background-image:url(icon-up@2x.png);}
+	.icon-down{background-image:url(icon-down@2x.png);}
+	.accordion-list .list-title .text{width:80%;} */
+	
+}
