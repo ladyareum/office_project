@@ -67,7 +67,7 @@ svg{max-width: 100%; width: 100%; height: auto;}
 .float_banner .plus_status .btn_state_plus{float:right; text-align: right;}
 .plus_status .content_headline{position: relative; color: #fff; line-height: 1.5; padding: 5px 0;}
 .plus_status .content_headline .plus_des{font-size:20px; font-size: 2.0rem; }
-.plus_status .btn-box{padding: 12px 0;} 
+.plus_status .btn-group{padding: 12px 0;} 
 .btn_plus{background: #fff; border: 1px solid #fff; color: #e31d19; transition: all .2s ease-in-out;}
 .text_gradient{background: #fff; color: #e31d19; transition: all .2s ease-in-out;} 
 .text_gradient:hover{background: -webkit-linear-gradient(90deg, #e31d19, #aca3cd, #fd8b55); background: linear-gradient(60deg, #e31d19, #aca3cd, #fd8b55); color: #e31d19; background-size: 300%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 5s ease-in-out infinite;}
