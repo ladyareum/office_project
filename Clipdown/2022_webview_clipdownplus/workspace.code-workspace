@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../tests"
+		},
+		{
+			"path": "../../../projects/guide"
+		},
+		{
+			"path": "../../../projects"
+		}
+	]
+}

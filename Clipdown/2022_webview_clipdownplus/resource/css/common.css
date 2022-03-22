@@ -73,6 +73,7 @@ img{max-width:100%; width:100%; height:auto;} /* 모바일에서 이미지 선�
 /* Responsive Layout Column Grid  */
 .row {position: relative; overflow: hidden; margin-left: -20px; margin-right: -20px;}
 .row [class*="col-"]{position: relative; float: left; min-height: 1px; padding-left: 20px; padding-right: 20px;}
+
 .col-xs-12{width: 100%;}
 .col-xs-11 {width: 91.67%;}
 .col-xs-10 {width: 83.33%;}
@@ -186,7 +187,8 @@ img{max-width:100%; width:100%; height:auto;} /* 모바일에서 이미지 선�
     -webkit-tap-highlight-color: transparent; 
     white-space: nowrap;
 }
-.btn.focus, .btn:focus, .btn:hover{color:#333;}
+.btn.focus, .btn:focus, .btn:hover, .btn:active{color:#333;}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{outline-offset:0; outline:0; }
 a.btn:hover{text-decoration: none;}
 a.disabled{pointer-events: none;}
 .link-text{
@@ -213,8 +215,7 @@ a.disabled{pointer-events: none;}
 .btn-md{}
 .btn-lg{max-width: 280px; font-size:18px; padding: 14px 24px 8px 24px;}
 .btn_defualt{background: #fff; border: 1px solid #fff; color: #666;}
-.btn_point{background: #fff; border: 1px solid #fff; color: #e31d19;}
-.btn_point:hover{background: #fff; border: 1px solid #fff; color: #d22619;}
+
 
 
 /* Color */
@@ -237,11 +238,14 @@ a.disabled{pointer-events: none;}
 .navbar-default .navbar-toggle .icon-bar{background-color:#333;}
 .navbar-default .navbar-brand{height: 60px; padding: 15px 15px;}
 .navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a{font-size: 16px; font-weight: 500; line-height: 1.3; color:#333;}
+
 .navbar-default .navbar-nav > li > a{padding: 20px 20px;}
 @media screen and (max-width:767px) {
 	::-webkit-scrollbar {display:none;} 
+	.navbar-default{border-color: #f8f8f8;}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a{color:#333;}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{color:#666;}
+	.navbar-default .navbar-brand,.navbar-default .navbar-nav > li.divider{display: none;}
 }
 
 

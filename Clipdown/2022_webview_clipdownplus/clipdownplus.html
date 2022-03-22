@@ -82,10 +82,12 @@
                                 <span class="text-block plus_des weight-600_bold">월 3,300원으로 자유롭게 이용하세요.</span>
                             </div>
                         </div>
-                        <div class="col-md-6 ta-r">
-                            <div class="btn-group">
-                                <button class="btn btn-lg btn-round btn_point btn_plus">클립다운플러스 시작하기</button>
-                                <button class="btn btn-lg btn-round btn_defualt btn_plus">해지하기</button>
+                        <div class="col-md-6 btn_state_plus">
+                            <div class="btn-box">
+                                <button class="btn btn-lg btn-round btn_plus">
+                                    <span class="text_gradient">클립다운플러스 시작하기</span>
+                                </button>
+                                <button class="btn btn-lg btn-round btn_defualt">해지하기</button>
                             </div>
                         </div>
                     </div>
@@ -321,6 +323,17 @@
         
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <scrip src="./resource/js/common.js"></scrip>
+    <script src="./resource/js/jquery.bpopup.min.js"></script>
+    <script> 
+        $('html').on("click",function(e){ 
+          if( $(e.target).attr("id") != "navbar") {
+              $('.collapse').removeClass('in');
+          }
+      }); 
+      </script>
+	
 </body>
 </html>
