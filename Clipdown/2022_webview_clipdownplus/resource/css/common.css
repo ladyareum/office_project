@@ -244,15 +244,14 @@ a.disabled{pointer-events: none;}
 .navbar-default .navbar-toggle .icon-bar{background-color:#333;}
 .navbar-default .navbar-brand{height: 60px; padding: 15px 15px;}
 .navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a{font-size: 16px; font-weight: 500; line-height: 1.3; color:#333;}
-
 .navbar-default .navbar-nav > li > a{padding: 20px 20px;}
 @media screen and (max-width:767px) {
 	::-webkit-scrollbar {display:none;} 
-	.navbar-default{border-color: #f8f8f8;}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a{color:#333;}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{color:#666;}
-	.navbar-default .navbar-brand,.navbar-default .navbar-nav > li.divider{display: none;}
 }
+
+.close:focus, .close:hover{outline: 0;}
 
 
 /* flat banner style */
