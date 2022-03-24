@@ -188,7 +188,7 @@ img{max-width:100%; width:100%; height:auto;} /* 모바일에서 이미지 선�
     white-space: nowrap;
 	transition: all, 0.2s;
 }
-.btn.focus, .btn:focus, .btn:hover, .btn:active{color:#333;}
+.btn:focus, .btn:hover, .btn:active{-webkit-box-shadow: unset; box-shadow: unset;}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{outline-offset:0; outline:0; }
 a.btn:hover{text-decoration: none;}
 a.disabled{pointer-events: none;}
@@ -196,7 +196,7 @@ a.disabled{pointer-events: none;}
     min-width: 80px;	
     min-height: 28px; 
     background:transparent; 
-    color:#333; 
+    color:#888; 
     font-size:14px; 
     font-size:1.4rem; 
     font-weight: 400; 
@@ -212,20 +212,25 @@ a.disabled{pointer-events: none;}
 .btn-group .btn:last-child{margin-right: 0;}
 .btn-round{-moz-border-radius:30px; -webkit-border-radius: 30px; border-radius: 30px !important;}
 .btn-circle{-moz-border-radius:50%; -webkit-border-radius: 50%; border-radius: 50%; min-width: 0; min-height: 0; width:36px; height:36px; padding: 0;}
-.btn-sm{}
+.btn-sm{font-size: 12px; font-weight: 400;}
 .btn-md{font-size:16px; padding: 8px 10px 4px 10px;}
 .btn-lg{max-width: 280px; font-size:18px; padding: 14px 24px 8px 24px;}
-.btn_defualt{background: #fff; border: 1px solid #fff; color: #666;}
-.btn_point{background: #fff; border: 1px solid #e31d19; color: #e31d19;}
+.btn_defualt{background: #fff; border: 1px solid #e5e5e5; color: #888;}
+.btn_defualt:hover{color: #333;}
+.btn_point{background: #fff; border: 1px solid #e21d19; color: #e21d19;}
 .btn_point:hover{background: #e31d19; border: 1px solid #e31d19; color: #fff;}
+.btn_outline_defualt{background: #fff; border: 1px solid #ddd; color: #888;}
+.btn_outline_defualt:hover, .btn_outline_defualt:active, .btn_outline_defualt:focus{background: #fff; border: 1px solid #333; color: #333;}
+.btn_outline_point{background: #fff; border: 1px solid #e58280; color: #e21d19;}
+.btn_outline_point:hover, .btn_outline_point:active, .btn_outline_point:focus{background: #fff; border: 1px solid #e31d19; color: #e31d19;}
 
 
 /* Color */
-.bg_point{background:#v;}
+.bg_point{background:#e31d19;}
 .bg_white{background:#fff;}
 .bg_defualt{background:#333;}
 .defualt-color{color:#333;}
-.point-text{color:#31d19;}
+.point-text{color:#e31d19;}
 .info-text{color:#666;}
 
 /* Bootstrap Common */
@@ -269,5 +274,20 @@ a.disabled{pointer-events: none;}
 .layer_popup .popup_header .btn-box .btn_popup_close .icon-close:before{-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
 .layer_popup .popup_header .btn-box .btn_popup_close .icon-close:after{-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg)}
 .layer_popup .popup_contents{padding: 40px 40px;}
-.layer_popup .popup_content{position: relative;}
+.layer_popup .popup_content{position: relative; width: 100%;}
+.layer_popup .popup_content .content_info{margin-bottom: 20px;}
+.layer_popup .popup_content .content_info_message{text-align: left; padding: 10px 0;}
 
+.layer_popup .style_alert .popup_wrap{border: 1px solid #e21d19;}
+.layer_popup .style_alert .popup_header{background: #e21d19; text-align: left; padding: 10px 10px;}
+.layer_popup .style_alert .popup_header .header-title h1{font-size: 15px; font-size: 1.5rem; font-weight: 500; color:#fff;}
+.layer_popup .style_alert .popup_header .btn-box{right: 10px; padding: 10px 0;}
+.layer_popup .style_alert .btn-box .btn_popup_close .btn_close{width: 20px; height: 20px;}
+.layer_popup .style_alert .popup_contents{padding: 20px 20px;}
+.layer_popup .style_alert .popup_content .content_info{text-align: left; margin-bottom: 10px;}
+.layer_popup .style_alert .popup_content .content_info p{padding-bottom: 10px;}
+.layer_popup .style_alert .btn_alert{width: 100%; text-align: right; border-top: 1px solid #ddd; padding: 20px 0;}
+.layer_popup .style_alert .btn_alert .btn-box .btn{position: relative; margin-right: 5px;}
+.layer_popup .style_alert .btn_alert .guide-area{position: absolute; top:0; left: 0; width: 100%; padding: 4px 0;}
+.layer_popup .style_alert .btn_alert .guide-area .link-text{font-size: 12px; font-size: 1.2rem; }
+.layer_popup .style_alert .btn_alert .guide-area .link-text:hover{color: #333;}
