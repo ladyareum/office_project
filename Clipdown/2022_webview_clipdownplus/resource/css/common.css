@@ -284,8 +284,29 @@ a.disabled{pointer-events: none;}
 .layer_popup .style_alert .popup_contents{padding: 20px 20px;}
 .layer_popup .style_alert .popup_content .content_info{text-align: left; margin-bottom: 10px;}
 .layer_popup .style_alert .popup_content .content_info p{padding-bottom: 10px;}
-.layer_popup .style_alert .btn_alert{width: 100%; text-align: right; border-top: 1px solid #ddd; padding: 20px 0;}
+.layer_popup .style_alert .btn_alert{width: 100%; text-align: right; border-top: 1px solid #ddd; padding: 20px 0 0;}
 .layer_popup .style_alert .btn_alert .btn-box .btn{position: relative; margin-right: 5px;}
 .layer_popup .style_alert .btn_alert .guide-area{position: absolute; top:0; left: 0; width: 100%; padding: 4px 0;}
 .layer_popup .style_alert .btn_alert .guide-area .link-text{font-size: 12px; font-size: 1.2rem; }
 .layer_popup .style_alert .btn_alert .guide-area .link-text:hover{color: #333;}
+
+@media screen and (max-width: 480px){
+	.layer_popup .popup_wrap{max-width: 300px;}
+	.layer_popup .popup_header, .layer_popup .popup_contents{padding: 20px 10px;}
+	.layer_popup .popup_header .header-title h1{font-size: 20px; font-size: 2.0rem;}
+	.layer_popup .popup_header .header-title .sub-title{font-size: 14px; font-size: 1.4rem;}
+	.layer_popup .popup_style_plus .popup_header .header-title .sub-title small{font-size: 12px; font-size: 1.2rem;}
+	.layer_popup .popup_header .btn-box{right:10px; padding: 10px 0;}
+	.layer_popup .popup_content .plus_function{margin-bottom: 20px;}
+	.layer_popup .popup_content .plus_function li{margin-bottom: 10px !important; padding: 10px 10px !important;}
+	.layer_popup .popup_content .plus_function li .icon_plus{font-size: 1.8rem; font-size: 1.8rem;}
+	.layer_popup .popup_content .plus_function li .text_icon{font-size: 13px; font-size: 1.3rem; }
+	.item_method .item_text{padding: 0 !important;}
+	.complete_message{font-size: 14px; font-size: 1.4rem;}
+	.download_banner p{font-size: 12px; font-size: 1.2rem; }
+	.download_banner .img-list .list_text{font-size: 13px; font-size: 1.3rem; }
+	.download_banner .img-list .list_img .img_banner{height: 38px !important;}
+	.content_info_message .text_message p{font-size: 13px; font-size: 1.3rem; line-height: 1.3; }
+	.layer_popup .style_alert .btn_alert .guide-area{position: relative; text-align: right !important; padding: 8px 0;}
+
+}
