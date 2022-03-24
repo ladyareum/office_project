@@ -249,6 +249,11 @@ a.disabled{pointer-events: none;}
 	::-webkit-scrollbar {display:none;} 
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a{color:#333;}
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{color:#666;}
+	.navbar-default .navbar-nav > li > a{padding: 10px 10px;}
+	.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a{font-size: 14px;}
+	.nav>li.divider{display: none;}
+	.menu_clipdownplus{padding: 10px 10px !important;}
+
 }
 
 .close:focus, .close:hover{outline: 0;}

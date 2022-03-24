@@ -84,7 +84,7 @@ svg{max-width: 100%; width: 100%; height: auto;}
 }
 
 
-.menu_clipdownplus{top: -1px; font-size: 18px; font-size: 1.8rem !important; padding: 18px 20px !important;}
+.menu_clipdownplus{top: -1px; font-size: 18px; font-size: 1.8rem !important; padding: 18px 20px;}
 .menu_clipdownplus .point-text{font-size: 19px; padding-left: 3px;}
 .divider:before{content: ''; display: inline-block; top:50%; width: 1px; height: 18px; background: #ccc; margin: 20px 3px; } 
 
