@@ -197,10 +197,9 @@ svg{max-width: 100%; width: 100%; height: auto;}
 .layer_popup .popup_style_plus{border: 1px solid #e21d19; }
 .layer_popup .popup_style_plus .popup_header .header-title .sub-title small{font-size: 13px; font-size: 1.3rem; font-weight: 300;}
 .layer_popup .popup_style_plus .popup_content{position: relative; max-width:320px; margin: 0 auto;}
-.layer_popup .popup_style_plus .popup_content .guide_text{}
-.layer_popup .popup_content .plus_function{text-align: left;}
+.layer_popup .popup_content .plus_function{text-align: left; margin-bottom: 40px;}
 .layer_popup .popup_content .plus_function li{font-size: 15px; font-size:1.5rem; border:1px solid #E6E6E6; border-radius: 8px; margin-bottom: 20px; padding: 14px 14px; box-shadow:0px 2px 6px -3px rgba(0,0,0,0.3)}
-.layer_popup .popup_content .plus_function li .icon_plus{display: inline-block; float: left; width: 2.0rem; height: 2.0rem; vertical-align: middle; margin-right: 10px;}
+.layer_popup .popup_content .plus_function li .icon_plus{float: left; width: 2.0rem; height: 2.0rem; vertical-align: middle; margin-right: 10px;}
 .layer_popup .popup_content .plus_function li .icon_plus svg{width: 2.0rem; height: 2.0rem;}
 .layer_popup .popup_content .plus_function li .text_icon{display: block; position: relative; overflow: hidden; top:1px;}
 
