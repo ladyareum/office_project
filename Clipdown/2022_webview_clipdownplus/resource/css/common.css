@@ -188,8 +188,7 @@ img{max-width:100%; width:100%; height:auto;} /* 모바일에서 이미지 선�
     white-space: nowrap;
 	transition: all, 0.2s;
 }
-.btn:focus, .btn:hover, .btn:active{-webkit-box-shadow: unset; box-shadow: unset;}
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{outline-offset:0; outline:0; }
+.btn:focus, .btn:hover, .btn:active, .btn:active:focus{outline-offset:0; outline:0; -webkit-box-shadow: none; box-shadow: none;}
 a.btn:hover{text-decoration: none;}
 a.disabled{pointer-events: none;}
 .link-text{
@@ -216,13 +215,13 @@ a.disabled{pointer-events: none;}
 .btn-md{font-size:16px; padding: 8px 10px 4px 10px;}
 .btn-lg{max-width: 280px; font-size:18px; padding: 14px 24px 8px 24px;}
 .btn_defualt{background: #fff; border: 1px solid #e5e5e5; color: #888;}
-.btn_defualt:hover{color: #333;}
+.btn_defualt:hover, .btn_defualt:focus, .btn_defualt:active:focus{color: #333;}
 .btn_point{background: #fff; border: 1px solid #e21d19; color: #e21d19;}
-.btn_point:hover{background: #e31d19; border: 1px solid #e31d19; color: #fff;}
+.btn_point:hover, .btn_point:focus, .btn_point:active:focus{background: #e31d19; border: 1px solid #e31d19; color: #fff;}
 .btn_outline_defualt{background: #fff; border: 1px solid #ddd; color: #888;}
-.btn_outline_defualt:hover, .btn_outline_defualt:active, .btn_outline_defualt:focus{background: #fff; border: 1px solid #333; color: #333;}
+.btn_outline_defualt:hover, .btn_outline_defualt:focus .btn_outline_defualt:active, .btn_outline_defualt:active:focus{background: #fff; border: 1px solid #333; color: #333;}
 .btn_outline_point{background: #fff; border: 1px solid #e58280; color: #e21d19;}
-.btn_outline_point:hover, .btn_outline_point:active, .btn_outline_point:focus{background: #fff; border: 1px solid #e31d19; color: #e31d19;}
+.btn_outline_point:hover, .btn_outline_point:active, .btn_outline_point:focus, .btn_outline_point:active:focus{background: #fff; border: 1px solid #e31d19; color: #e31d19;}
 
 
 /* Color */

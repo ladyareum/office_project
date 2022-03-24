@@ -204,7 +204,7 @@ svg{max-width: 100%; width: 100%; height: auto;}
 .layer_popup .popup_content .plus_function li .icon_plus svg{width: 2.0rem; height: 2.0rem;}
 .layer_popup .popup_content .plus_function li .text_icon{display: block; position: relative; overflow: hidden; top:1px;}
 
-.complete_message{font-size: 16px; font-size:1.6rem; line-height: 1.6;}
+.complete_message{font-size: 16px; font-size:1.6rem; line-height: 1.6; padding-bottom: 20px;}
 .download_banner p{font-weight: 500; padding: 5px 0;}
 .download_banner .list_style{position: relative; overflow: hidden; width: 100%;}
 .download_banner .list_style .img-list{display: flex; justify-content: center; align-items: center; border: 1px solid #ddd; margin-bottom: 5px; padding: 10px 10px;}
