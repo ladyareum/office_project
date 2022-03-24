@@ -144,12 +144,12 @@ svg{max-width: 100%; width: 100%; height: auto;}
     .btn-lg{max-width: 210px; font-size: 16px; padding: 8px 16px 5px 16px;}
     .head-title h1{font-size: 34px; font-size: 3.4rem;}
     .float_banner .plus_status .content_headline .plus_des{font-size: 16px; font-size: 1.6rem;}
-    .section_main{padding: 40px 0 60px;}
+    .section_main{padding: 20px 0 60px;}
     .section_main .head-title h1{font-size: 38px; font-size: 3.8rem;}
     .section_main .head-title .point-text{font-size: 40px; font-size: 4.0rem;}
     .section_main .main-intro .intro_des .item_des{display:block; line-height: 1.8;}
     .section_main .main-intro .intro_des .item_des:before{display:none;}
-    .section_main .main-intro .img_top_main{width: 80%}
+    .section_main .main-intro .img_top_main{width: 90%}
     .section_intro, .section_comparison, .section_faq{padding:60px 0;}
     .section_intro .content_item{padding:20px 0;}
     .section_intro .content_item .item_des{font-size: 18px; font-size: 1.8rem; text-align: center;}
@@ -162,7 +162,7 @@ svg{max-width: 100%; width: 100%; height: auto;}
 }
 
 @media screen and (max-width: 480px){
-    .btn-lg{font-size: 14px; padding: 8px 10px 4px 10px;}
+    .btn-lg{font-size: 14px; padding: 10px 16px 6px 16px;}
     .float_banner .plus_status{text-align: center; padding: 10px 0;}
     .float_banner .plus_status .col-md-6{width: 100%;}
     .float_banner .plus_status .btn_state_plus{text-align: center;}
