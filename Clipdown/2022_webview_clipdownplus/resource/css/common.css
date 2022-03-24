@@ -302,16 +302,6 @@ a.disabled{pointer-events: none;}
 	.layer_popup .popup_header .header-title .sub-title{font-size: 14px; font-size: 1.4rem;}
 	.layer_popup .popup_style_plus .popup_header .header-title .sub-title small{font-size: 12px; font-size: 1.2rem;}
 	.layer_popup .popup_header .btn-box{right:10px; padding: 10px 0;}
-	.layer_popup .popup_content .plus_function{margin-bottom: 20px;}
-	.layer_popup .popup_content .plus_function li{margin-bottom: 10px !important; padding: 10px 10px !important;}
-	.layer_popup .popup_content .plus_function li .icon_plus{font-size: 1.8rem; font-size: 1.8rem;}
-	.layer_popup .popup_content .plus_function li .text_icon{font-size: 13px; font-size: 1.3rem; }
-	.item_method .item_text{padding: 0 !important;}
-	.complete_message{font-size: 14px; font-size: 1.4rem;}
-	.download_banner p{font-size: 12px; font-size: 1.2rem; }
-	.download_banner .img-list .list_text{font-size: 13px; font-size: 1.3rem; }
-	.download_banner .img-list .list_img .img_banner{height: 38px !important;}
-	.content_info_message .text_message p{font-size: 13px; font-size: 1.3rem; line-height: 1.3; }
-	.layer_popup .style_alert .btn_alert .guide-area{position: relative; text-align: right !important; padding: 8px 0;}
+	
 
 }
