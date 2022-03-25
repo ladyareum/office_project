@@ -6,7 +6,7 @@
 .container:after{content:" "; display:block; clear:both;}
 
 /* Custom Style */
-svg{max-width: 100%; width: 100%; height: auto;}
+svg{max-width: 100%; width: 100%; height: 100%;}
 .head-title{text-align: center; padding: 40px 0;}
 .head-title h1{font-size:42px; font-size:4.2rem; font-weight: 500;}
 .notify_badge{display:inline-block; position:relative; min-width: 10px; top:-15px; right: 5px; background-color: #e21d19; font-family: 'Poppins', sans-serif; font-size:10px; font-weight: 700; color:#fff; text-align:center; white-space: nowrap; border-radius: 10px; padding: 0 6px;}
@@ -84,14 +84,14 @@ svg{max-width: 100%; width: 100%; height: auto;}
 }
 
 
-.menu_clipdownplus{top: -1px; font-size: 18px; font-size: 1.8rem !important; padding: 18px 20px;}
-.menu_clipdownplus .point-text{font-size: 19px; padding-left: 3px;}
-.divider:before{content: ''; display: inline-block; top:50%; width: 1px; height: 18px; background: #ccc; margin: 20px 3px; } 
+.navbar-default .navbar-nav .menu_clipdownplus{padding: 18px 20px;}
+.navbar-default .navbar-nav .menu_clipdownplus .point-text{font-size: 17px; padding-left: 3px;}
+.navbar-default .navbar-nav .divider:before{content: ''; display: inline-block; top:50%; width: 1px; height: 16px; background: #ccc; margin: 20px 3px; } 
 
 .section_main{margin-top: 84px; text-align: center; padding: 80px 0 120px;}
 .section_main .head-title{padding:0 0 40px;}
 .section_main .head-title h1{font-weight: 400;}
-.section_main .head-title .point-text{font-size:48px; font-size:4.8rem; vertical-align: middle;}
+.section_main .head-title .point-text{position: relative; top:3px; font-size:48px; font-size:4.8rem; padding-left: 5px;}
 .section_main .main-intro{position: relative; text-align: center;}
 .section_main .main-intro .intro_des{font-size:2.4rem; font-size:24px; font-weight: 500; color: #e21d19; padding: 20px 0;}
 .section_main .main-intro .intro_des .item_des:before{content: '\2022'; display: inline-block; position: relative; right: 3px; color:#ddd;}
@@ -225,3 +225,8 @@ svg{max-width: 100%; width: 100%; height: auto;}
 
 
 
+ /* IE10+ */
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    /* Enter your style code */
+    svg{max-width: 100%; width: 100%;}
+   }
