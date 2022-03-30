@@ -1055,26 +1055,5 @@
 				}
 			})();
 		</script>
-		<script>
-		// layerPopup
-		function popupOpenClose(popup_download) {
-			
-			/* Add div inside popup for layout if one doesn't exist */
-			if ($(".wrapper").length == 0){
-				$(popup_download).wrapInner("<div class='wrapper'></div>");
-			}
-			
-			/* Open popup */
-			$(popup_download).show();
-
-			/* Close popup if user clicks on background */
-			$(popup_download).click(function(e) {
-				if ( e.target == this ) {
-					if ($(popup_download).is(':visible')) {
-						$(popup_download).hide();
-					}
-				}
-			});
-		};	
-		</script>
+		
 </html>
