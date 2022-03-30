@@ -116,8 +116,8 @@
 							<div class="list_style">
 								<div class="img-list">
 									<div class="list_text">
-										<span class="text-block text-md">광고없는 동영상 시청</span>
-										<span class="text-block weight-500_medium">클립다운 <span class="point-text">Lite</span></span>
+										<span class="text-block sub-text">광고없는 동영상 시청</span>
+										<span class="text-block weight-600_bold">클립다운 <span class="point-text">Lite</span></span>
 									</div>
 									<div class="list_img">
 										<a href="#" class="img_banner"><img class="img-fluid" src="./resource/images/btn_badge_googleplay.png" width="170px" height="50px" alt="onestore"></a>
@@ -125,8 +125,8 @@
 								</div>
 								<div class="img-list">
 									<div class="list_text">
-										<span class="text-block text-md">광고제거 + 동영상 소장</span>
-										<span class="text-block weight-500_medium point-text">클립다운</span>
+										<span class="text-block sub-text">광고제거 + 동영상 소장</span>
+										<span class="text-block weight-600_bold point-text">클립다운</span>
 									</div>
 									<div class="list_img">
 										<a href="#" class="img_banner" style="margin-bottom: 10px;"><img class="img-fluid" src="./resource/images/btn_badge_onestore.png" width="170px" height="50px" alt="onestore"></a>
@@ -799,7 +799,7 @@
 		<!-- 하단영역부터 다운로드버튼 중앙정렬 -->
 		<div class="btn_download_bottom">
 			<div class="btn-box">				
-				<a class="btn btn-lg btn-grad btn_layerpopup" href="#layerpopup" data-js="open">
+				<a class="btn btn-lg btn-grad btn_layerpopup" href="#" download="newfilename" title="클립다운 설치하기" target="_blank">
 					<div class="icon-download">
 						<div class="arrow bounce">
 							<span class="fa fa-arrow-down fa-2x"></span>
@@ -843,7 +843,7 @@
 						<div class="list_style center">
 							<div class="img-list">
 								<div class="list_text">
-									<span class="text-block text-md">광고없는 동영상 시청</span>
+									<span class="text-block text-md">광고없는 영상 시청으로 가볍게!</span>
 									<span class="text-block weight-500_medium">클립다운 <span class="point-text">Lite</span></span>
 								</div>
 								<div class="list_img">
@@ -852,8 +852,8 @@
 							</div>
 							<div class="img-list">
 								<div class="list_text">
-									<span class="text-block text-md">광고제거 + 동영상 소장</span>
-									<span class="text-block weight-500_medium point-text">클립다운</span>
+									<span class="text-block text-md">광고제거와 동영상  소장을 한번에!</span>
+									<span class="text-block weight-500_medium point-text">클립다운 모바일</span>
 								</div>
 								<div class="list_img">
 									<a href="#" class="img_banner" style="margin-bottom: 10px;"><img class="img-fluid" src="./resource/images/btn_badge_onestore.png" height="50px" alt="onestore"></a>
@@ -1054,6 +1054,27 @@
 					});
 				}
 			})();
-		
-			</script>
+		</script>
+		<script>
+		// layerPopup
+		function popupOpenClose(popup_download) {
+			
+			/* Add div inside popup for layout if one doesn't exist */
+			if ($(".wrapper").length == 0){
+				$(popup_download).wrapInner("<div class='wrapper'></div>");
+			}
+			
+			/* Open popup */
+			$(popup_download).show();
+
+			/* Close popup if user clicks on background */
+			$(popup_download).click(function(e) {
+				if ( e.target == this ) {
+					if ($(popup_download).is(':visible')) {
+						$(popup_download).hide();
+					}
+				}
+			});
+		};	
+		</script>
 </html>

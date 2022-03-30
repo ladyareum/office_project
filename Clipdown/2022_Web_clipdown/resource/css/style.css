@@ -313,15 +313,17 @@
     .popup_download .m-btn-box.download_banner{margin:0;}
 
 /* 상단 메인 다운로드 버튼 스타일 220329 */   
-.m-btn-box.download_banner .list_style{position: relative; overflow: hidden; width: 100%; padding: 0 10px;}
-.m-btn-box.download_banner .list_style .img-list{display: flex; justify-content: center; align-items: center; border: 1px solid #eee; margin-bottom: 5px; padding: 10px 10px; background: rgb(255 255 255 / 65%);}
-.m-btn-box.download_banner .img-list .list_text{position: relative; float: left; width: 50%; vertical-align: middle; font-size: 18px; font-size: 1.8rem; line-height: 1.6; text-align: left; padding: 0 12px;}
-.m-btn-box.download_banner .img-list .list_img{display: inline-block; width: 50%; }
-.m-btn-box.download_banner .img-list .list_img .img_banner{display: block; width: 80%; margin: 0 auto;}
+.m-btn-box.download_banner .list_style{position: relative; overflow: hidden; width: 90%; margin: 0 auto; padding: 0 10px;}
+.m-btn-box.download_banner .list_style .img-list{display: flex; justify-content: center; align-items: center; border: 1px solid #eee; margin-bottom: 15px; padding: 10px 10px; background: rgb(255 255 255 / 95%);}
+.m-btn-box.download_banner .img-list .list_text{position: relative; width: 60%; vertical-align: middle; font-size: 18px; font-size: 1.8rem; font-weight: 500; line-height: 1.6; text-align: left; padding: 0 12px;}
+.m-btn-box.download_banner .img-list .list_text .sub-text{font-size: 16px; font-size: 1.6rem;}
+.m-btn-box.download_banner .img-list .list_img{display: block; position: relative;  width: 60%; text-align: right;}
+.m-btn-box.download_banner .img-list .list_img .img_banner{display: inline-block; width: 85%;}
 .m-btn-box.download_banner .list_style.center{padding: 0;}
 .m-btn-box.download_banner .list_style.center .img-list{display: flex; flex-direction: column;}
 .m-btn-box.download_banner .list_style.center .img-list .list_text{width: 100%; text-align: center; padding: 10px 0;}
 .m-btn-box.download_banner .list_style.center .img-list .list_img{padding-bottom: 10px;}
+.popup_download .m-btn-box.download_banner .img-list .list_img{width: 75%; text-align: center;}
 
 
 
@@ -331,15 +333,13 @@
     .header_title{font-size: 22px; font-size: 2.2rem;}
     .content_title{font-size: 18px; font-size: 1.8rem;}
     .content-text{font-size: 13px; font-size: 1.3rem;}
-    .text-md{font-size: 12px; font-size: 1.2rem;}
     .btn-lg{min-height: 48px !important; font-size: 18px !important;}
     .btn-md{min-height: 34px !important; font-size: 16px !important; line-height: 1.6; padding: 8px 12px !important;}
-    .m-btn-box{margin: 20px 0;}
     .m-btn-box .m_btn{display: block; width: 70%; margin: 20px auto;}
     .left_img, .right_img{width:100% !important;}
     .content_info{margin: 25px 0;}
     .slick-dotted.slick-slider{margin-bottom: 10px;}
-    .intro-section, .intro-section .bg_01{height: 840px;}
+    .intro-section, .intro-section .bg_01{height: 880px;}
     .intro-section .bg_01{width:100%;}
     .intro-section .header_title{font-size: 32px; font-size: 3.2rem;}
     .intro-section .m_img_main_style{width:100% !important}
@@ -366,6 +366,9 @@
     .m_download_bottom{padding: 10px 0;}
     .m_download_bottom .info-text{font-size: 20px; font-size: 2.0rem;}
     .m_download_bottom .icon-download .fa-2x{font-size: 1.6em;}
+    .m-btn-box.download_banner .img-list .list_text{width: 70%;}
+    .m-btn-box.download_banner .img-list .list_text .sub-text{font-size: 14px; font-size: 1.4rem; letter-spacing: -1px;}
+    .m-btn-box.download_banner .img-list .list_img .img_banner{width: 100%;}
 
 }
 
