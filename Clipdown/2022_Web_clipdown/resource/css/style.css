@@ -357,7 +357,10 @@
     .services-section .btn-lg{min-height: 48px !important; font-size: 18px !important; padding: 16px 60px !important;}
     .search-bar .search-form .form-control{font-size: 14px; font-size: 1.4rem;}
     .contact-section .btn{padding: 8px 40px !important;}
-    .popup-header .btn-area{position:absolute; top:0; right:10px; padding:00px 0;}
+    .popup-header{Padding: 15px 25px 15px 15px;}
+    .popup-header .btn-area{position:absolute; top:0; right:10px; padding:10px 0;}
+    .popup-header .btn-area .btn-close{width: 24px; height: 24px;}
+    .popup-header .btn-area .btn-close .close{width: 20px; height: 20px;}
     .services-section .contents-mobile .content_title{font-size: 18px; font-size: 1.8rem;}
     .services-section .contents-mobile .content_title .badge_new{top:-15px; right: 5px; font-size: 11px;}
     .m_download_bottom{padding: 10px 0;}
