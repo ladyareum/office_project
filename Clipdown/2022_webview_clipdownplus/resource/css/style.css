@@ -151,10 +151,11 @@ svg{max-width: 100%; width: 100%; height: 100%;}
 /* radio button images */
 .content-item .content-title{font-size: 16px; font-size:1.6rem; font-weight: 500; text-align: left;}
 .form{display: grid; grid-template-columns: 48% 48%; grid-column-gap: 4%; margin: 20px 0 30px 0;}
+.item_method{width: 15rem; height: 15rem;}
 .item_method .btn_radio {display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: 100%; background: #fff; color: #1C2729; font-size: 14px; font-size:1.4rem; font-weight: 400; text-align: center; border: 1px solid #ddd; border-radius: 5px; padding: 12px 12px; cursor: pointer;}
 .item_method input[type="radio"] {display: none;}
 .item_method input[type="radio"]:checked + .btn_radio {color: #e21d19; border: 3px solid #e21d19; padding: 10px 10px;}
-.item_method .item_text{padding: 10px 0;}
+.item_method .item_text{padding: 10px 0 0;}
 
 /* footer */
 .footer-section{text-align: center; border-top: 1px solid #f5f5f5; padding:20px 10px;}
@@ -214,6 +215,7 @@ svg{max-width: 100%; width: 100%; height: 100%;}
 	.layer_popup .popup_content .plus_function li{margin-bottom: 10px !important; padding: 10px 10px !important;}
 	.layer_popup .popup_content .plus_function li .icon_plus{font-size: 1.8rem; font-size: 1.8rem;}
 	.layer_popup .popup_content .plus_function li .text_icon{font-size: 13px; font-size: 1.3rem; }
+    .item_method{width: 13rem; height: 13rem;}
 	.item_method .item_text{padding: 0 !important;}
 	.complete_message{font-size: 14px; font-size: 1.4rem;}
 	.download_banner p{font-size: 12px; font-size: 1.2rem; }
