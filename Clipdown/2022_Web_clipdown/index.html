@@ -799,7 +799,7 @@
 		<!-- 하단영역부터 다운로드버튼 중앙정렬 -->
 		<div class="btn_download_bottom">
 			<div class="btn-box">				
-				<a class="btn btn-lg btn-grad" href="http://down.clipdown.co.kr/launcher/5/clipdown_setup_5.exe" download="newfilename">
+				<a class="btn btn-lg btn-grad btn_layerpopup" href="#layerpopup" data-js="open">
 					<div class="icon-download">
 						<div class="arrow bounce">
 							<span class="fa fa-arrow-down fa-2x"></span>
@@ -809,6 +809,65 @@
 				</a>
 			</div>
 		</div> <!-- //하단영역 다운로드버튼 중앙정렬 -->
+
+		<!-- 모바일 일때 다운로드버튼 고정 중앙정렬 -->
+		<div class="m_download_bottom">
+			<div class="btn-box">
+				<div class="btn-group">				
+					<a class="m_btn btn btn-grad btn_layerpopup" href="#layerPopup" data-js="open">
+						<div class="icon-download">
+							<div class="arrow bounce">
+								<span class="fa fa-arrow-down fa-2x"></span>
+							</div> 
+						</div>
+						<div class="info-text">클립다운 다운로드</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- layer PopUp  -->
+		<div class="popup popup_download">
+			<div class="popup-header">
+				<div class="header-title"><span class="title">클립다운 다운로드</span></div>
+				<div class="btn-area">
+					<button type="button" class="btn-close" name="close"><span class="close icon-close"></span></button>	
+				</div>
+			</div>
+			<div class="popup-body">
+				<div class="poup-content">
+					<div class="m-btn-box download_banner">				
+						<!-- <div class="btn-group">				
+							<a class="m_btn" href="#"><img class="img-fluid" src="./resource/images/btn_onestore.png" width="170px" height="50px" alt="onestore"></a>
+							<a class="m_btn" href="#"><img class="img-fluid" src="./resource/images/btn_galaxystore.png" width="170px" height="50px" alt="galaxystore"></a>
+						</div> -->
+						<div class="list_style center">
+							<div class="img-list">
+								<div class="list_text">
+									<span class="text-block text-md">광고없는 동영상 시청</span>
+									<span class="text-block weight-500_medium">클립다운 <span class="point-text">Lite</span></span>
+								</div>
+								<div class="list_img">
+									<a href="#" class="img_banner"><img class="img-fluid" src="http://www.clipdown.net/common_resource/images/btn_badge_googleplay.png" width="170px" height="50px" alt="onestore"></a>
+								</div>
+							</div>
+							<div class="img-list">
+								<div class="list_text">
+									<span class="text-block text-md">광고제거 + 동영상 소장</span>
+									<span class="text-block weight-500_medium point-text">클립다운</span>
+								</div>
+								<div class="list_img">
+									<a href="#" class="img_banner" style="margin-bottom: 10px;"><img class="img-fluid" src="http://www.clipdown.net/common_resource/images/btn_badge_onestore.png" width="170px" height="50px" alt="onestore"></a>
+									<a href="#" class="img_banner"><img class="img-fluid" src="http://www.clipdown.net/common_resource/images/btn_badge_galaxystore.png" width="170px" height="50px" alt="galaxystore"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- // layer PopUp  -->	
+		<!-- // 모바일 일때 다운로드버튼 고정 중앙정렬 -->
+		
 	</body>
 	
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
@@ -926,4 +985,75 @@
 		});
 	
 		</script>
+		<script>
+			// 모바일 일때 스크롤 시 하단 중앙영역 다운로드 노출
+			(function() {
+				$(document).ready(function () {
+					setFloatingButton();
+				});
+	
+				function setFloatingButton() {
+	
+					//if(isMobile() === true) {
+					//	return;
+					//}
+	
+					let isShowing = false;
+					let isCSSChanged = false;
+	
+					let viewportHeight = window.innerHeight;
+					let aboutMarginTop = 430;
+					let aboutOffsetTop = $("#about").offset().top;
+					let aboutTitleHeight = $("#about .header_title").height();
+					let aboutHeight = $("#about").height();
+	
+					let space = 50;
+					let showButtonScrollTopPosition = aboutOffsetTop - viewportHeight + aboutMarginTop + aboutTitleHeight;
+	
+					let fixedScrollTopPosition = $("#notice").offset().top - 75;
+	
+					$(window).scroll(function () {
+						// console.log($('.m_download_bottom').css('bottom'));
+						let scrollValue = $(document).scrollTop();
+	
+						if(scrollValue >= showButtonScrollTopPosition + space) {
+	
+							if(isShowing === false) {
+								// 버튼 보이기√
+								$('.m_download_bottom').css('bottom', "0");
+								$('.m_download_bottom').fadeIn(500);
+	
+								isShowing = true;
+								// console.log("show");
+							}
+	
+							if(scrollValue >= fixedScrollTopPosition) {
+								if(isCSSChanged === false) {
+									// 위치 변경
+									isCSSChanged = true;
+									$('.m_download_bottom').addClass("fixed");
+									// console.log("버튼 CSS 변경");
+								}
+							} else {
+								if(isCSSChanged === true) {
+									// 위치 변경 원복
+									isCSSChanged = false;
+									$('.m_download_bottom').removeClass("fixed");
+									// console.log("버튼 CSS 변경 원복");
+								}
+							}
+	
+						} else {
+							if(isShowing === true) {
+								// 버튼 숨기기
+								$('.m_download_bottom').fadeOut(500)
+								isShowing = false;
+								// console.log("hide");
+							}
+						}
+					});
+				}
+			})();
+		
+			</script>
 </html>

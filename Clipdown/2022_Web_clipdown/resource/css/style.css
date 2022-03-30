@@ -225,7 +225,7 @@
     text-align: center;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;
+    color: #fff;
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
@@ -236,6 +236,7 @@
     text-decoration: none;
 }
 .btn-grad:active{background-color: #e31d19;}
+.m_download_bottom{display: none;}
 
 /* Media Query */
 @media screen and (max-width: 767px){
@@ -291,19 +292,36 @@
     .popupDownlad.show{display: none !important;}
 
     /* 모바일 일때만 고정 다운로드 버튼 노출 */
-    .m_download_bottom{position: fixed; width: 100%; left: 0; background: #fff; text-align: center; padding:20px 0; z-index: 999;}
+    .m_download_bottom{position: fixed; width: 100%; left: 0; background:  rgb(255 255 255 / 45%); text-align: center; padding:20px 0; z-index: 998;}
     .m_download_bottom{bottom: -100px;}
     .m_download_bottom.show{display:block; bottom: 0;}
     .m_download_bottom.fixed{position: relative;}
-    .m_download_bottom .m_btn{display: inline-block; position: relative; width: 40%;}
     .m_download_bottom .btn-box{display:block;}
+    .m_download_bottom .m_btn{display: inline-block; position: relative; width: 100%;}
+    @keyframes sliding{
+        0%{
+          bottom:300px;
+        } 
+        100%{
+          bottom:40px;
+        }
+      }
+    .m_download_bottom a{box-shadow: 0px 2px 5px rgb(26 0 35 / 5%), 0px 10px 10px rgb(0 0 0 / 15%); transition: all .2s ease-in-out;}
+    .m_download_bottom .btn-grad{padding:10px 40px;}
+    .m_download_bottom .icon-download{float: left;}
+    .m_download_bottom .info-text{display: inline-block; color:#fff; font-size: 26px; font-size: 2.6rem; font-weight: 500; line-height: 1.5; padding-top: 6px; padding-left: 10px;}  
+    .popup_download .m-btn-box.download_banner{margin:0;}
 
-    /* 상단 메인 다운로드 버튼 스타일 220329 */
-    .intro-section .m-btn-box.download_banner .list_style{position: relative; overflow: hidden; width: 100%; padding:0 20px;}
-    .intro-section .m-btn-box.download_banner .list_style .img-list{display: flex; justify-content: center; align-items: center; border: 1px solid #f8f8f8; margin-bottom: 5px; padding: 10px 10px; background: rgb(255 255 255 / 65%);}
-    .intro-section .m-btn-box.download_banner .img-list .list_text{position: relative; float: left; width: 50%; vertical-align: middle; font-size: 18px; font-size: 1.8rem; line-height: 1.6; text-align: left; padding: 0 12px;}
-    .intro-section .m-btn-box.download_banner .img-list .list_img{display: inline-block; width: 50%; }
-    .intro-section .m-btn-box.download_banner .img-list .list_img .img_banner{display: block; width: 80%; margin: 0 auto;}
+/* 상단 메인 다운로드 버튼 스타일 220329 */   
+.m-btn-box.download_banner .list_style{position: relative; overflow: hidden; width: 100%; padding: 0 10px;}
+.m-btn-box.download_banner .list_style .img-list{display: flex; justify-content: center; align-items: center; border: 1px solid #eee; margin-bottom: 5px; padding: 10px 10px; background: rgb(255 255 255 / 65%);}
+.m-btn-box.download_banner .img-list .list_text{position: relative; float: left; width: 50%; vertical-align: middle; font-size: 18px; font-size: 1.8rem; line-height: 1.6; text-align: left; padding: 0 12px;}
+.m-btn-box.download_banner .img-list .list_img{display: inline-block; width: 50%; }
+.m-btn-box.download_banner .img-list .list_img .img_banner{display: block; width: 80%; margin: 0 auto;}
+.m-btn-box.download_banner .list_style.center{padding: 0;}
+.m-btn-box.download_banner .list_style.center .img-list{display: flex; flex-direction: column;}
+.m-btn-box.download_banner .list_style.center .img-list .list_text{width: 100%; text-align: center; padding: 10px 0;}
+.m-btn-box.download_banner .list_style.center .img-list .list_img{padding-bottom: 10px;}
 
 
 
@@ -339,9 +357,13 @@
     .services-section .btn-lg{min-height: 48px !important; font-size: 18px !important; padding: 16px 60px !important;}
     .search-bar .search-form .form-control{font-size: 14px; font-size: 1.4rem;}
     .contact-section .btn{padding: 8px 40px !important;}
-    .popup-header .btn-area{position:absolute; top:0; right:10px; padding:20px 0;}
+    .popup-header .btn-area{position:absolute; top:0; right:10px; padding:00px 0;}
     .services-section .contents-mobile .content_title{font-size: 18px; font-size: 1.8rem;}
     .services-section .contents-mobile .content_title .badge_new{top:-15px; right: 5px; font-size: 11px;}
+    .m_download_bottom{padding: 10px 0;}
+    .m_download_bottom .info-text{font-size: 20px; font-size: 2.0rem;}
+    .m_download_bottom .icon-download .fa-2x{font-size: 1.6em;}
+
 }
 
 @media screen and (max-width: 320px){
