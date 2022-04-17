@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no" />
-    <title>WebView 안내메세지</title>
+    <title>[APP] WebView 안내메세지</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel='stylesheet' href='./resource/css/common.css' type='text/css'>
     <link rel='stylesheet' href='./resource/css/style.css' type='text/css'>
@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- 
-        // 로그인/성인인증 안내메세지 
+        // 앱 로그인/성인인증 안내메세지 
         // 안내창 폼 메세지는 <section> 영역 class=hide 태그로 숨겨놨습니다. 
      -->
     <div class="wrap webview_info">
@@ -34,92 +34,72 @@
                 <div class="content_info content_info_message">
                     <!--         안내메세지 영역          -->
                     <div class="content_text" style="padding-bottom: 40px;">
+                       <div class="title_message">
+                           <h1>연령제한 영상 다운로드 안내</h1>
+                       </div>
                         <div class="text_message">
-                            <p>클립다운 멤버십 회원만 <br />다운로드 가능한 영상입니다.</p>
+                            <p>클립다운 PLUS+ 회원만 <br />다운로드 가능한 영상입니다.</p>
                             <span class="guide_text">(국가/연령제한 등 시청 제한영상)</span>
+                            <p>로그인 후 이용해주세요.</p>
                         </div>
                         <div class="btn_area">
                             <button class="btn_wv_info btn_login_google">구글 로그인</button>   
                         </div>
                     </div>
-                     <!--         안내메세지 영역          -->
+                    <!--       // 안내메세지 영역          -->
+                </div>
+            </section>
+            <!-- Message 연령제한  -->
+            <section class="content_box webview_box hide">
+                <div class="content_info content_info_message">
                     <div class="content_text" style="padding-bottom: 40px;">
+                       <div class="title_message">
+                           <h1>연령제한 영상 다운로드 안내</h1>
+                       </div>
                         <div class="text_message">
-                            <p>유튜브에서 차단된 IP 입니다.</p>
-                            <p>멤버십 이용 시 클립다운에서 제공하는<br />IP로 다운로드 가능합니다.</p>
+                            <p>클립다운 PLUS+ 회원만 <br />다운로드 가능한 영상입니다.</p>
+                            <span class="guide_text">(국가/연령제한 등 시청 제한영상)</span>
+                            <p>로그인 후 이용해주세요.</p>
                         </div>
                         <div class="btn_area">
                             <button class="btn_wv_info btn_login_google">구글 로그인</button>   
                         </div>
                     </div>
+                </div>
+            </section>
+            <!-- Message 시청제한  -->
+            <section class="content_box webview_box hide">
+                <div class="content_info content_info_message">
                     <div class="content_text" style="padding-bottom: 40px;">
+                       <div class="title_message">
+                           <h1>시청제한 영상 다운로드 안내</h1>
+                       </div>
                         <div class="text_message">
-                            <p>클립다운 멤버십 로그인 후<br />다운로드 시간 설정이 가능합니다.</p>
+                            <p>클립다운 PLUS+ 회원만 <br />다운로드 가능한 영상입니다.</p>
+                            <span class="guide_text">(국가/연령제한 등 시청 제한영상)</span>
+                            <p>로그인 후 이용해주세요.</p>
                         </div>
                         <div class="btn_area">
                             <button class="btn_wv_info btn_login_google">구글 로그인</button>   
                         </div>
-                    </div>
-                    <div class="content_text" style="padding-bottom: 40px;">
-                        <div class="text_message">
-                            <p>연령제한 영상을 다운로드 하기 위해<br />성인 인증이 필요합니다.</p>
-                            <span class="guide_text">* 타인 명의로 인증을 진행하는 경우<br />그 책임은 본인에게 있습니다.</span>
-                        </div>
-                        <div class="btn_area">
-                            <button class="btn btn_wv_info btn_avs">휴대폰으로 성인인증 하기</button>   
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Message 로그인 01 -->
-            <section class="content_box webview_box hide">
-                <div class="content_info_message">
-                    <div class="text_message">
-                        <p>클립다운 멤버십 회원만 <br />다운로드 가능한 영상입니다.</p>
-                        <span class="guide_text">(국가/연령제한 등 시청 제한영상)</span>
-                    </div>
-                    <div class="btn_area">
-                        <button class="btn_wv_info btn_login_google">구글 로그인</button>   
-                    </div>
-                </div>
-            </section>
-            <!-- Message 로그인 02 -->
-            <section class="content_box webview_box hide">
-                <div class="content_info_message">
-                    <div class="text_message">
-                        <p>유튜브에서 차단된 IP 입니다.</p>
-                        <p>멤버십 이용 시 클립다운에서 제공하는<br />IP로 다운로드 가능합니다.</p>
-                    </div>
-                    <div class="btn_area">
-                        <button class="btn_wv_info btn_login_google">구글 로그인</button>   
-                    </div>
-                </div>
-            </section>
-            <!-- Message 로그인 03 -->
-            <section class="content_box webview_box hide">
-                <div class="content_info_message">
-                    <div class="text_message">
-                        <p>클립다운 멤버십 로그인 후<br />다운로드 시간 설정이 가능합니다.</p>
-                    </div>
-                    <div class="btn_area">
-                        <button class="btn_wv_info btn_login_google">구글 로그인</button>   
                     </div>
                 </div>
             </section>
             <!-- Message 성인인증 -->
             <section class="content_box webview_box hide">
-                <div class="content_info_message">
+                <div class="content_text" style="padding-bottom: 40px;">
+                   <div class="title_message">
+                       <h1>성인 인증 안내</h1>
+                   </div>
                     <div class="text_message">
-                        <p>연령제한 영상을 다운로드 하기 위해<br />성인 인증이 필요합니다.</p>
-                        <span class="guide_text">* 타인 명의로 인증을 진행하는 경우<br />그 책임은 본인에게 있습니다.</span>
+                        <p>동영상 다운로드를 위해<br />성인인증이 필요합니다.</p>
+                        <span class="guide_text">* 타인 명의로 인증하는 경우<br />그 책임은 본인에게 있습니다.</span>
                     </div>
                     <div class="btn_area">
                         <button class="btn btn_wv_info btn_avs">휴대폰으로 성인인증 하기</button>   
                     </div>
                 </div>
             </section>
-
-            
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>

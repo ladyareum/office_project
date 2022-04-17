@@ -39,7 +39,8 @@ legend, hr, caption span, .hide{position:absolute; left:-3000%;}
 em, address{font-style:normal;}
 table{border-collapse:collapse; border-spacing:0; width:100%;}
 a{background-color: transparent; color:#666; text-decoration:none; -webkit-text-decoration-skip:object;}
-a:focus, a:hover{outline: 0; text-decoration:underline; color:#e21d19}
+a:focus, a:hover{outline: 0; color:#e21d19}
+a:hover{text-decoration:underline;}
 fieldset, iframe, img, button{border:0;}
 textarea,input[type="file"],input[type="password"],input[type="text"]{text-indent:4px; border:1px solid #ddd;}
 select{padding:0 0 0 5px; height:28px; border:1px solid #e5e5e5;}
