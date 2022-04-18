@@ -284,7 +284,7 @@ svg{max-width: 100%; width: 100%; height: 100%;}
     .acc-item .acc-contents{padding: 5px 10px 10px;}
     .acc-item .style_aw{font-size: 143px; font-size: 1.3rem;}
     .layer_popup .popup_content .plus_function{margin-bottom: 20px;}
-	.layer_popup .popup_content .plus_function li{margin-bottom: 10px !important; padding: 10px 10px !important;}
+	.layer_popup .popup_content .plus_function li{margin-bottom: 15px !important; padding: 10px 10px !important;}
 	.layer_popup .popup_content .plus_function li .icon_plus{font-size: 1.8rem; font-size: 1.8rem;}
 	.layer_popup .popup_content .plus_function li .text_icon{font-size: 13px; font-size: 1.3rem; }
     .layer_popup .popup_style_plus .popup_contents{padding: 20px 20px;}
@@ -292,7 +292,7 @@ svg{max-width: 100%; width: 100%; height: 100%;}
     .layer_popup .popup_style_plus .item_method{}
 	.layer_popup .popup_style_plus .item_method .item_text{padding: 5px 0 0;}
     .layer_popup .popup_style_plus .item_method .img_pay{width: 68px; height: 68px;}
-    .layer_popup .popup_style_plus .btn-box{margin-top:15px;}
+    .layer_popup .popup_style_plus .btn-box{margin-top:0;}
 	.complete_message{font-size: 14px; font-size: 1.4rem;}
 	.download_banner p{font-size: 12px; font-size: 1.2rem; }
 	.download_banner .img-list .list_text{font-size: 13px; font-size: 1.3rem; }
