@@ -306,8 +306,6 @@ a.disabled{pointer-events: none;}
 	.layer_popup .popup_style_plus .popup_header .header-title .sub-title small{font-size: 12px; font-size: 1.2rem;}
 	.layer_popup .popup_header .btn-box{right:10px; padding: 10px 0;}
 	.layer_popup .popup_header .btn-box .btn_popup_close{width: 18px; height: 18px;}
-	.layer_popup .popup_header .btn-box .btn_popup_close .btn_close{width: 18px; height: 18px;}
-	
-
+	.layer_popup .popup_header .btn-box .btn_popup_close .btn_close{width: 18px; height: 18px;}	
 }
  
