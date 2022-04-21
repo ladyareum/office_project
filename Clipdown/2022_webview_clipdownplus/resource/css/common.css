@@ -299,7 +299,7 @@ a.disabled{pointer-events: none;}
 .layer_popup .style_alert .btn_alert .guide-area .link-text:hover{color: #333;}
 
 @media screen and (max-width: 480px){
-	.layer_popup .popup_wrap{max-width: 300px;}
+	.layer_popup .popup_wrap{max-width: 310px;}
 	.layer_popup .popup_header, .layer_popup .popup_contents{padding: 20px 10px;}
 	.layer_popup .popup_header .header-title h1{font-size: 20px; font-size: 2.0rem;}
 	.layer_popup .popup_header .header-title .sub-title{font-size: 14px; font-size: 1.4rem;}
