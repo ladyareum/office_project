@@ -167,12 +167,6 @@
 .footer-section .policy-info{padding-bottom: 8px;}
 .footer-section .copyright{position: relative; padding-top:15px;}
 
-.slide-indicators{position: relative; left: 0; margin:5px 0;}
-.slick-dots{bottom:0 !important;}
-.slick-dots li{margin:0 !important;}
-.slick-dots li button:before{color:#333;}
-.slick-dots li.slick-active button:before{color:#333;}
-
 .back-to-top{display: none; }
 .back-to-top a{color:transparent;}
 
@@ -237,6 +231,8 @@
 }
 .btn-grad:active{background-color: #e31d19;}
 .m_download_bottom{display: none;}
+
+.main_item_mobile{display: none !important;}
 
 /* Media Query */
 @media screen and (max-width: 767px){
@@ -318,13 +314,44 @@
     .m-btn-box.download_banner .img-list .list_text{position: relative; width: 60%; vertical-align: middle; font-size: 18px; font-size: 1.8rem; font-weight: 500; line-height: 1.6; text-align: left; padding: 0 12px;}
     .m-btn-box.download_banner .img-list .list_text .sub-text{font-size: 16px; font-size: 1.6rem;}
     .m-btn-box.download_banner .img-list .list_img{display: block; position: relative;  width: 60%; text-align: right;}
-    .m-btn-box.download_banner .img-list .list_img .img_banner{display: inline-block; width: 85%;}
+    .m-btn-box.download_banner .img-list .list_img .img_banner{display: inline-block; width: 100%;}
     .m-btn-box.download_banner .list_style.center{padding: 0;}
     .m-btn-box.download_banner .list_style.center .img-list{display: flex; flex-direction: column;}
     .m-btn-box.download_banner .list_style.center .img-list .list_text{width: 100%; text-align: center; padding: 10px 0;}
     .m-btn-box.download_banner .list_style.center .img-list .list_img{padding-bottom: 10px;}
-    .popup_download .m-btn-box.download_banner .img-list .list_img{width: 75%; text-align: center;}
+    .popup_download .m-btn-box.download_banner .img-list .list_img{width: 50%; text-align: center;}
 
+    /* 상단 메인 슬라이더 스타일 220425 */
+    .main_item_pc{display: none !important;}
+    .main_item_mobile{display: block !important;}
+    .main_item_mobile .btn-group .m_btn{padding: 0 5px;}
+    .m-btn-box .m_btn.btn_single{width: 40%;}
+    .main_item_mobile .item_02 .title_clipdownlite{font-size:36px; font-size: 3.6rem;}
+    .slider{position: relative;}
+    .slide_arrow{position: absolute; top:50%; background: transparent; color: transparent; line-height: 0; font-size: 0; width: 32px; height: 32px; border: 1px solid rgb(238 238 238 / 65%); border-width: 0 0 2px 2px; z-index: 999;}
+    .slide_arrow.arrow_prev:hover, .slide_arrow.arrow_next:hover{border: 1px solid #fff; border-width: 0 0 2px 2px;}
+    .arrow_prev{left:40px;  -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
+    .arrow_next {right: 40px;  -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg);}
+    .slick-dots {text-align: center; margin: 0 0 10px 0; padding: 0; }
+    .slick-dots li {display: inline-block; margin-left: 4px; margin-right: 4px;}
+    .slick-dots li.slick-active button {background-color: #fff;}
+    .slick-dots li button {font: 0/0 a; text-shadow: none; color: transparent; background-color: rgb(238 238 238 / 65%); border: none; width: 12px; height: 12px; border-radius: 50%;}
+    .slick-dots li:hover { background-color: #fff;}
+
+    /* mobile_intro-section 추가 스타일 시안 2가지 0426 */
+      .mobile_intro-section{display: block;}
+      .mobile_intro-section, .mobile_intro-section .bg_01{height: 900px;}
+      .mobile_intro-section .btn_link{display: inline-block; overflow: hidden; margin: 20px 0; padding: 6px 10px 4px 10px; background: transparent; border: 1px solid transparent; transition: all .2s ease-in;;}
+      .mobile_intro-section .btn_link:focus, .mobile_intro-section .btn_link:hover{background: #fff;   border: 1px solid #e21d19;}
+      .mobile_intro-section .btn_link .link-text{font-size:18px; font-size: 1.8rem; font-weight: 500; line-height: 2; text-decoration: underline; text-underline-position: under; }
+      .mobile_intro-section .btn_link .link-text:focus, .btn_link .link-text:hover{color: #e21d19; text-decoration: none;}
+
+      /* mobile Popup Main Style */
+      .mobile_popup_intro >div{width: 100%; background: transparent; border: 1px solid transparent; box-shadow: none;}
+      .mobile_popup_intro .poup-content{text-align: center;}
+      .mobile_popup_intro .poup-content .item_text{}
+      .mobile_popup_intro .poup-content .item_img{}
+      .mobile_popup_intro .poup-content .btn_box .btn_download{}
 }
 
 @media screen and (max-width: 480px){
@@ -334,10 +361,11 @@
     .btn-lg{min-height: 48px !important; font-size: 18px !important;}
     .btn-md{min-height: 34px !important; font-size: 16px !important; line-height: 1.6; padding: 8px 12px !important;}
     .m-btn-box .m_btn{display: block; width: 70%; margin: 20px auto;}
+    .m-btn-box .m_btn.btn_single{width: 50%;}
     .left_img, .right_img{width:100% !important;}
     .content_info{margin: 25px 0;}
     .slick-dotted.slick-slider{margin-bottom: 10px;}
-    .intro-section, .intro-section .bg_01{height: 880px;}
+    /* .intro-section, .intro-section .bg_01{height: 880px;} */
     .intro-section .bg_01{width:100%;}
     .intro-section .header_title{font-size: 32px; font-size: 3.2rem;}
     .intro-section .m_img_main_style{width:100% !important}
@@ -367,14 +395,20 @@
     .m-btn-box.download_banner .img-list .list_text{width: 70%;}
     .m-btn-box.download_banner .img-list .list_text .sub-text{font-size: 14px; font-size: 1.4rem; letter-spacing: -1px;}
     .m-btn-box.download_banner .img-list .list_img .img_banner{width: 100%;}
+    .main_item_mobile .item_02 .m_main_img{padding-top: 20px;}
+    .main_item_mobile .item_02 .title_clipdownlite{font-size:28px; font-size: 2.8rem;}
+
+    .mobile_intro-section .btn_link{margin: 10px 0 20px 0;}
+    .mobile_intro-section .btn_link .link-text{font-size: 16px; font-size: 1.6rem;}
 
 }
 
 @media screen and (max-width: 320px){
-    .intro-section, .intro-section .bg_01{height: 700px;}
+    /* .intro-section, .intro-section .bg_01{height: 700px;} */
     .intro-section .m-btn-box .btn-group .btn{width: 160px;}
     .services-section .m-btn-box .btn-group .img-fluid{width: 160px;}
     .intro-section .m-btn-box.download_banner .img-list .list_text{font-size: 14px; font-size: 1.4rem; padding: 0;}
+    .mobile_intro-section, .mobile_intro-section .bg_01{height: 820px;}
 }
 
 

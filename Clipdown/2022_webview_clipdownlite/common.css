@@ -109,7 +109,7 @@ nav.gnb_inner{position: relative; overflow: hidden;}
 .accordion-list-box .acc-item .acc-head.active:hover{background: #fef6f6; cursor:default;}
 .accordion-list-box .acc-item .acc-head.active .heade-title{color: #e21d19;}
 .accordion-list-box .acc-item .acc-head.active .heade-title:after{border-color:#e21d19; transform: rotate(-135deg); margin-top: 7px;}
-.accordion-list-box .acc-item .acc-contents{display:block; position: relative; width:100%; height: auto; background:#fef6f6; border:1px solid #fef6f6; border-top: transparent; padding:10px 20px 20px; margin-top: -1px; z-index: 999;}
+.accordion-list-box .acc-item .acc-contents{display:block; position: relative; width:100%; height: auto; background:#fef6f6; border:1px solid #fef6f6; border-top: transparent; padding:10px 40px 20px 20px; margin-top: -1px; z-index: 999;}
 .accordion-list-box .acc-item .acc-contents p{line-height: 1.6;}
 
 /* style */
