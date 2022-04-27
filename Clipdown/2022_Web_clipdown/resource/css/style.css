@@ -369,7 +369,7 @@
     .btn-lg{min-height: 48px !important; font-size: 18px !important;}
     .btn-md{min-height: 34px !important; font-size: 16px !important; line-height: 1.6; padding: 8px 12px !important;}
     .m-btn-box .m_btn{display: block; width: 70%; margin: 20px auto;}
-    .m-btn-box .m_btn.btn_single{width: 50%;}
+    .m-btn-box .m_btn.btn_single{width: 64%;}
     .left_img, .right_img{width:100% !important;}
     .content_info{margin: 25px 0;}
     .slick-dotted.slick-slider{margin-bottom: 10px;}
