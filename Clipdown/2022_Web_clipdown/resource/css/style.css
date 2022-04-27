@@ -341,14 +341,14 @@
     .slick-dots li:hover { background-color: #fff;}
 
     /* mobile_intro-section 추가 스타일 시안 3가지 0426 */
-      .mobile_intro-section, .mobile_popup_intro{display: block;}
+      .mobile_intro-section{display: block;}
       .mobile_intro-section, .mobile_intro-section .bg_01{height: 900px;}
       .mobile_intro-section .btn_link{display: inline-block; overflow: hidden; margin: 20px 0; padding: 6px 10px 4px 10px; background: transparent; border: 1px solid transparent; transition: all .2s ease-in;;}
       .mobile_intro-section .btn_link:focus, .mobile_intro-section .btn_link:hover{background: #fff; border: 1px solid #e21d19; border-radius: 5px;}
       .mobile_intro-section .btn_link .link-text{font-size:18px; font-size: 1.8rem; font-weight: 500; line-height: 2; text-decoration: underline; text-underline-position: under; }
       .mobile_intro-section .btn_link .link-text:focus, .btn_link .link-text:hover{color: #e21d19; text-decoration: none;}
       /* mobile Popup Main Style */
-      .mobile_popup_intro{background: rgba(0, 0, 0, 0.90);}
+      .mobile_popup_intro{display: block !important; background: rgba(0, 0, 0, 0.90);}
       .mobile_popup_intro >div{width: 100%; background: transparent; border: 1px solid transparent; box-shadow: none;}
       .mobile_popup_intro .poup-content{text-align: center;}
       .mobile_popup_intro .poup-content .content_title{font-size:20px; font-size: 2.0rem; color: #fff; padding-bottom: 10px;}
