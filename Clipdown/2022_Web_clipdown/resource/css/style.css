@@ -332,8 +332,8 @@
     .slider{position: relative;}
     .slide_arrow{position: absolute; top:50%; background: transparent; color: transparent; line-height: 0; font-size: 0; width: 32px; height: 32px; border: 1px solid rgb(238 238 238 / 65%); border-width: 0 0 2px 2px; z-index: 999;}
     .slide_arrow.arrow_prev:hover, .slide_arrow.arrow_next:hover{border: 1px solid #fff; border-width: 0 0 2px 2px;}
-    .arrow_prev{left:40px;  -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
-    .arrow_next {right: 40px;  -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg);}
+    .arrow_prev{left:20px;  -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
+    .arrow_next {right: 20px;  -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg);}
     .slick-dots {text-align: center; margin: 0 0 10px 0; padding: 0; }
     .slick-dots li {display: inline-block; margin-left: 4px; margin-right: 4px;}
     .slick-dots li.slick-active button {background-color: #fff;}
