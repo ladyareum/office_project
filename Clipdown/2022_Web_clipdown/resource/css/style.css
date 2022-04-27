@@ -234,7 +234,7 @@
 /* 모바일에서만 노출되는 컨텐츠 */
 .m_download_bottom{display: none;}
 .main_item_mobile{display: none !important;}
-.mobile_popup_intro{display: none !important;}
+.mobile_popup_intro{display: none;}
 
 /* Media Query */
 @media screen and (max-width: 767px){
@@ -287,7 +287,7 @@
     .btn-win{display: none;}
     /* 모바일에서는 버튼 감추기 */
     .btn_download_bottom{display: none !important;}
-    .popupDownlad.show{display: none !important;}
+    .popupDownlad.show{display: none;}
 
     /* 모바일 일때만 고정 다운로드 버튼 노출 */
     .m_download_bottom{position: fixed; width: 100%; left: 0; background:  rgb(255 255 255 / 45%); text-align: center; padding:20px 0; z-index: 998;}
@@ -348,8 +348,8 @@
       .mobile_intro-section .btn_link .link-text{font-size:18px; font-size: 1.8rem; font-weight: 500; line-height: 2; text-decoration: underline; text-underline-position: under; }
       .mobile_intro-section .btn_link .link-text:focus, .btn_link .link-text:hover{color: #e21d19; text-decoration: none;}
       /* mobile Popup Main Style */
-      .mobile_popup_intro{display: block !important; background: rgba(0, 0, 0, 0.90);}
-      .mobile_popup_intro >div{width: 100%; background: transparent; border: 1px solid transparent; box-shadow: none;}
+      .mobile_popup_intro{display: block; position: fixed; height: 100%; width: 100%; left: 0; top: 0; background: rgba(0, 0, 0, 0.90); z-index: 5000;}
+      .mobile_popup_intro >div{width: 100%; max-width: 600px; position: fixed; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); left: 50%; top: 50%; background: #FFF;  z-index: 5001; text-align: center; background: transparent; border: 1px solid transparent; box-shadow: none;}
       .mobile_popup_intro .poup-content{text-align: center;}
       .mobile_popup_intro .poup-content .content_title{font-size:20px; font-size: 2.0rem; color: #fff; padding-bottom: 10px;}
       .mobile_popup_intro .poup-content .content_title .point-text{font-size:22px; font-size: 2.2rem;}
