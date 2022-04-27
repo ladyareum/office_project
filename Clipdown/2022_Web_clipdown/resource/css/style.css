@@ -234,7 +234,7 @@
 /* 모바일에서만 노출되는 컨텐츠 */
 .m_download_bottom{display: none;}
 .main_item_mobile{display: none !important;}
-.mobile_popup_intro{display: none;}
+.mobile_popup_intro{display: none !important;}
 
 /* Media Query */
 @media screen and (max-width: 767px){
@@ -355,7 +355,6 @@
       .mobile_popup_intro .poup-content .content_title .point-text{font-size:22px; font-size: 2.2rem;}
       .mobile_popup_intro .poup-content .item_description{padding: 5px 0;}
       .mobile_popup_intro .poup-content .item_description p{font-size:18px; font-size: 1.8rem; font-weight: 400; color: #fff;}
-      .mobile_popup_intro .poup-content .item_img{}
       .mobile_popup_intro .poup-content .btn_box{display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; margin-bottom: 15px;}
       .mobile_popup_intro .poup-content .btn_box .btn-group{position: relative; width: 100%; max-width: 360px;}
       .mobile_popup_intro .poup-content .btn_box .btn_download{width: 100%; background: #e21d19; color: #fff; padding: 14px 30px 10px 30px; font-size:18px; font-size: 1.8rem;}
