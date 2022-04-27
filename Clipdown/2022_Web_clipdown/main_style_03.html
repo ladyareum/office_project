@@ -65,7 +65,7 @@
 	 	</div>
 		
 		<!-- Intro Section -->
-		<section id="intro" class="intro-section mobile_intro-section">
+		<section id="intro" class="intro-section">
 			<div class="bg_01"></div>
 			<div class="container">
 				<div class="row">
@@ -110,9 +110,30 @@
 						</div>
 
 						<div class="m-btn-box download_banner">				
-							<div class="btn-group">				
+							<!-- <div class="btn-group">				
 								<a class="m_btn" href="#"><img class="img-fluid" src="./resource/images/btn_onestore.png" width="170px" height="50px" alt="onestore"></a>
 								<a class="m_btn" href="#"><img class="img-fluid" src="./resource/images/btn_galaxystore.png" width="170px" height="50px" alt="galaxystore"></a>
+							</div> -->
+							<div class="list_style">
+								<div class="img-list">
+									<div class="list_text">
+										<span class="text-block sub-text">광고없는 동영상 시청</span>
+										<span class="text-block weight-600_bold">클립다운 <span class="point-text">Lite</span></span>
+									</div>
+									<div class="list_img">
+										<a href="#" class="img_banner"><img class="img-fluid" src="./resource/images/btn_badge_googleplay.png" width="170px" height="50px" alt="onestore"></a>
+									</div>
+								</div>
+								<div class="img-list">
+									<div class="list_text">
+										<span class="text-block sub-text">광고제거 + 동영상 소장</span>
+										<span class="text-block weight-600_bold point-text">클립다운</span>
+									</div>
+									<div class="list_img">
+										<a href="#" class="img_banner" style="margin-bottom: 10px;"><img class="img-fluid" src="./resource/images/btn_badge_onestore.png" width="170px" height="50px" alt="onestore"></a>
+										<a href="#" class="img_banner"><img class="img-fluid" src="./resource/images/btn_badge_galaxystore.png" width="170px" height="50px" alt="galaxystore"></a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -788,9 +809,23 @@
 					<div class="info-text">클립다운 다운로드</div>
 				</a>
 			</div>
-		</div> <!-- //하단영역 다운로드버튼 중앙정렬 -->		
+		</div> <!-- //하단영역 다운로드버튼 중앙정렬 -->
 
 		<!-- 모바일 일때 다운로드버튼 고정 중앙정렬 -->
+		<div class="m_download_bottom">
+			<div class="btn-box">
+				<div class="btn-group">				
+					<a class="m_btn btn btn-grad btn_layerpopup" href="#layerPopup" data-js="open">
+						<div class="icon-download">
+							<div class="arrow bounce">
+								<span class="fa fa-arrow-down fa-2x"></span>
+							</div> 
+						</div>
+						<div class="info-text">클립다운 다운로드</div>
+					</a>
+				</div>
+			</div>
+		</div>
 		<!-- layer PopUp  -->
 		<div class="popup popup_download">
 			<div class="popup-header">
@@ -831,26 +866,13 @@
 				</div>	
 			</div>
 		</div>
-		<!-- // layer PopUp  -->
+		<!-- // layer PopUp  -->	
 		<!-- // 모바일 일때 다운로드버튼 고정 중앙정렬 -->
 
+
 		<!-- 홈페이지 이탈 시 클립다운 라이트 팝업 띄우기 -->
-		<div class="m_download_bottom">
-			<div class="btn-box">
-				<div class="btn-group">				
-					<a class="m_btn btn btn-grad btn_layerpopup" href="#layerPopup" data-js="open">
-						<div class="icon-download">
-							<div class="arrow bounce">
-								<span class="fa fa-arrow-down fa-2x"></span>
-							</div> 
-						</div>
-						<div class="info-text">클립다운 다운로드</div>
-					</a>
-				</div>
-			</div>
-		</div>
 		<!-- layer PopUp  -->
-		<div class="popup mobile_popup_intro" style="display: block;">
+		<div class="popup mobile_popup_intro">
 			<div class="popup-body">
 				<div class="poup-content">
 					<div class="content_item">
@@ -872,14 +894,14 @@
 							</div>
 							
 						</div>
-						<a href="#" class="link_text">괜찮아요, 나중에 할게요.</a> 
+						<!-- <a href="javascript:closePop()" class="pop_clos link_text">괜찮아요, 나중에 할게요.</a> -->
+						<button type="button" class="pop_close link_text" name="close">괜찮아요, 나중에 할게요.</button>
 					</div>
-					
 				</div>	
 			</div>
 		</div>
 		<!-- // layer PopUp  -->	
-		<!-- // 홈페이지 이탈 시 클립다운 라이트 팝업 띄우기 -->
+		<!-- //홈페이지 이탈 시 클립다운 라이트 팝업 띄우기 -->
 	</body>
 	
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
@@ -887,6 +909,11 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
 	<script src="./resource/js/common.js"></script>
 	<script src="./resource/js/jquery.bpopup.min.js"></script>
+	<script>
+		$('.pop_close').click(function(){
+			$('.mobile_popup_intro').hide();
+		});
+	</script>
 	<script>
 	var animateButton = function(e) {
 	
