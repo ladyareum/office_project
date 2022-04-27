@@ -342,16 +342,23 @@
       .mobile_intro-section{display: block;}
       .mobile_intro-section, .mobile_intro-section .bg_01{height: 900px;}
       .mobile_intro-section .btn_link{display: inline-block; overflow: hidden; margin: 20px 0; padding: 6px 10px 4px 10px; background: transparent; border: 1px solid transparent; transition: all .2s ease-in;;}
-      .mobile_intro-section .btn_link:focus, .mobile_intro-section .btn_link:hover{background: #fff;   border: 1px solid #e21d19;}
+      .mobile_intro-section .btn_link:focus, .mobile_intro-section .btn_link:hover{background: #fff; border: 1px solid #e21d19; border-radius: 5px;}
       .mobile_intro-section .btn_link .link-text{font-size:18px; font-size: 1.8rem; font-weight: 500; line-height: 2; text-decoration: underline; text-underline-position: under; }
       .mobile_intro-section .btn_link .link-text:focus, .btn_link .link-text:hover{color: #e21d19; text-decoration: none;}
 
       /* mobile Popup Main Style */
+      .mobile_popup_intro{background: rgba(0, 0, 0, 0.90);}
       .mobile_popup_intro >div{width: 100%; background: transparent; border: 1px solid transparent; box-shadow: none;}
       .mobile_popup_intro .poup-content{text-align: center;}
-      .mobile_popup_intro .poup-content .item_text{}
+      .mobile_popup_intro .poup-content .content_title{font-size:20px; font-size: 2.0rem; color: #fff; padding-bottom: 10px;}
+      .mobile_popup_intro .poup-content .content_title .point-text{font-size:22px; font-size: 2.2rem;}
+      .mobile_popup_intro .poup-content .item_description{padding: 5px 0;}
+      .mobile_popup_intro .poup-content .item_description p{font-size:18px; font-size: 1.8rem; font-weight: 400; color: #fff;}
       .mobile_popup_intro .poup-content .item_img{}
-      .mobile_popup_intro .poup-content .btn_box .btn_download{}
+      .mobile_popup_intro .poup-content .btn_box{display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; margin-bottom: 15px;}
+      .mobile_popup_intro .poup-content .btn_box .btn-group{position: relative; width: 100%; max-width: 360px;}
+      .mobile_popup_intro .poup-content .btn_box .btn_download{width: 100%; background: #e21d19; color: #fff; padding: 14px 30px 10px 30px; font-size:18px; font-size: 1.8rem;}
+      .mobile_popup_intro .poup-content .link_text{font-size:13px; font-size: 1.3rem; color: #c3c2cc;}
 }
 
 @media screen and (max-width: 480px){
@@ -385,7 +392,7 @@
     .contact-section .btn{padding: 8px 40px !important;}
     .popup-header{Padding: 15px 25px 15px 15px;}
     .popup-header .btn-area{position:absolute; top:0; right:10px; padding:10px 0;}
-    .popup-header .btn-area .btn-close{width: 24px; height: 24px;}
+    .popup-header .btn-area .btn-close{width: 20px; height: 20px;}
     .popup-header .btn-area .btn-close .close{width: 20px; height: 20px;}
     .services-section .contents-mobile .content_title{font-size: 18px; font-size: 1.8rem;}
     .services-section .contents-mobile .content_title .badge_new{top:-15px; right: 5px; font-size: 8px;}
