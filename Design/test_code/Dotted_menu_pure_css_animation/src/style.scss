@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    background: #f3f3f3;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    position: fixed;
+    top: calc(50% - 100px);
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0px);
+    height: 58px;
+    width: 288px;
+}
+
+.dotted-icon-checkbox {
+    position: fixed;
+    top: 0;
+    left: 9999px;
+}
+
+$pixel: 6px;
+$color: #333;
+
+.dotted-icon {
+    height: $pixel * 8;
+    width: $pixel * 8;
+    transition: background 0.3s;
+    cursor: pointer;
+    transform: translate3d(-50%, -50%, 0px);
+    
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0px);
+        height: $pixel;
+        width: $pixel;
+        background-color: $color;
+        box-shadow: ($pixel * -2) ($pixel * -2) 0 0 $color,       // Top left
+                    ($pixel * 0) ($pixel * -2) 0 0 $color,        // Top middle
+                    ($pixel * 2) ($pixel * -2) 0 0 $color,        // Top right
+                    ($pixel * -2) ($pixel * 0) 0 0 $color,        // Middle left
+                    ($pixel * 2) ($pixel * 0) 0 0 $color,         // Middle right
+                    ($pixel * -2) ($pixel * 2) 0 0 $color,        // Bottom left
+                    ($pixel * 0) ($pixel * 2) 0 0 $color,         // Bottom middle
+                    ($pixel * 2) ($pixel * 2) 0 0 $color;         // Bottom right
+        transition: box-shadow 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    }
+    
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+.dotted-menu {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    
+    &:hover:after {
+        box-shadow: ($pixel * 0) ($pixel * -3) 0 0 $color,        // Top left
+                    ($pixel * 0) ($pixel * -1.5) 0 0 $color,      // Top middle
+                    ($pixel * 3) ($pixel * 0) 0 0 $color,         // Top right
+                    ($pixel * -1.5) ($pixel * 0) 0 0 $color,      // Middle left
+                    ($pixel * 1.5) ($pixel * 0) 0 0 $color,       // Middle right
+                    ($pixel * -3) ($pixel * 0) 0 0 $color,        // Bottom left
+                    ($pixel * 0) ($pixel * 1.5) 0 0 $color,       // Bottom middle
+                    ($pixel * 0) ($pixel * 3) 0 0 $color;         // Bottom right
+    }
+}
+
+#dotted-menu:checked + .dotted-menu:after {
+    box-shadow: ($pixel * -2) ($pixel * -2) 0 0 $color,           // Top left
+                ($pixel * 1) ($pixel * -1) 0 0 $color,            // Top middle
+                ($pixel * 2) ($pixel * -2) 0 0 $color,            // Top right
+                ($pixel * -1) ($pixel * -1) 0 0 $color,           // Middle left
+                ($pixel * 1) ($pixel * 1) 0 0 $color,             // Middle right
+                ($pixel * -2) ($pixel * 2) 0 0 $color,            // Bottom left
+                ($pixel * -1) ($pixel * 1) 0 0 $color,            // Bottom middle
+                ($pixel * 2) ($pixel * 2) 0 0 $color;             // Bottom right
+}
+
+.dotted-dropdown {
+    position: fixed;
+    top: calc(50% + 80px);
+    left: 50%;
+    
+    &:hover:after {
+        background: none;
+        box-shadow: ($pixel * -3) ($pixel * -3) 0 0 transparent,  // Top left
+                    ($pixel * -2) ($pixel * -1) 0 0 $color,       // Top middle
+                    ($pixel * 3) ($pixel * -3) 0 0 transparent,   // Top right
+                    ($pixel * -1) ($pixel * 0) 0 0 $color,        // Middle left
+                    ($pixel * 1) ($pixel * 0) 0 0 $color,         // Middle right
+                    ($pixel * -3) ($pixel * 3) 0 0 transparent,   // Bottom left
+                    ($pixel * 0) ($pixel * 1) 0 0 $color,         // Bottom middle
+                    ($pixel * 3) ($pixel * 3) 0 0 transparent,    // Bottom right
+                    ($pixel * 2) ($pixel * -1) 0 0 $color;        // Middle middle
+    }
+}
+
+#dotted-dropdown:checked + .dotted-dropdown:after {
+    background: none;
+    box-shadow: ($pixel * -3) ($pixel * -3) 0 0 transparent,      // Top left
+                ($pixel * -2) ($pixel * 1) 0 0 $color,            // Top middle
+                ($pixel * 3) ($pixel * -3) 0 0 transparent,       // Top right
+                ($pixel * -1) ($pixel * 0) 0 0 $color,            // Middle left
+                ($pixel * 1) ($pixel * 0) 0 0 $color,             // Middle right
+                ($pixel * -3) ($pixel * 3) 0 0 transparent,       // Bottom left
+                ($pixel * 0) ($pixel * -1) 0 0 $color,            // Bottom middle
+                ($pixel * 3) ($pixel * 3) 0 0 transparent,        // Bottom right
+                ($pixel * 2) ($pixel * 1) 0 0 $color;             // Middle middle
+}
+
+.dotted-dropside {
+    position: fixed;
+    top: calc(50% + 160px);
+    left: 50%;
+    
+    &:hover:after {
+        background: none;
+        box-shadow: ($pixel * -3) ($pixel * -3) 0 0 transparent,  // Top left
+                    ($pixel * -1) ($pixel * -2) 0 0 $color,       // Top middle
+                    ($pixel * 3) ($pixel * -3) 0 0 transparent,   // Top right
+                    ($pixel * -1) ($pixel * 2) 0 0 $color,        // Middle left
+                    ($pixel * 0) ($pixel * -1) 0 0 $color,        // Middle right
+                    ($pixel * -3) ($pixel * 3) 0 0 transparent,   // Bottom left
+                    ($pixel * 0) ($pixel * 1) 0 0 $color,         // Bottom middle
+                    ($pixel * 3) ($pixel * 3) 0 0 transparent,    // Bottom right
+                    ($pixel * 1) ($pixel * 0) 0 0 $color;         // Middle middle
+    }
+}
+
+#dotted-dropside:checked + .dotted-dropside:after {
+    background: none;
+    box-shadow: ($pixel * -3) ($pixel * -3) 0 0 transparent,      // Top left
+                ($pixel * 1) ($pixel * -2) 0 0 $color,            // Top middle
+                ($pixel * 3) ($pixel * -3) 0 0 transparent,       // Top right
+                ($pixel * 1) ($pixel * 2) 0 0 $color,             // Middle left
+                ($pixel * 0) ($pixel * -1) 0 0 $color,            // Middle right
+                ($pixel * -3) ($pixel * 3) 0 0 transparent,       // Bottom left
+                ($pixel * 0) ($pixel * 1) 0 0 $color,             // Bottom middle
+                ($pixel * 3) ($pixel * 3) 0 0 transparent,        // Bottom right
+                ($pixel * -1) ($pixel * 0) 0 0 $color;            // Middle middle
+}

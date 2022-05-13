@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  background: #f3f3f3;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  position: fixed;
+  top: calc(50% - 100px);
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  height: 58px;
+  width: 288px;
+}
+
+.dotted-icon-checkbox {
+  position: fixed;
+  top: 0;
+  left: 9999px;
+}
+
+.dotted-icon {
+  height: 48px;
+  width: 48px;
+  transition: background 0.3s;
+  cursor: pointer;
+  transform: translate3d(-50%, -50%, 0px);
+}
+.dotted-icon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  height: 6px;
+  width: 6px;
+  background-color: #333;
+  box-shadow: -12px -12px 0 0 #333, 0px -12px 0 0 #333, 12px -12px 0 0 #333, -12px 0px 0 0 #333, 12px 0px 0 0 #333, -12px 12px 0 0 #333, 0px 12px 0 0 #333, 12px 12px 0 0 #333;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dotted-icon:hover {
+  background-color: #ddd;
+}
+
+.dotted-menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.dotted-menu:hover:after {
+  box-shadow: 0px -18px 0 0 #333, 0px -9px 0 0 #333, 18px 0px 0 0 #333, -9px 0px 0 0 #333, 9px 0px 0 0 #333, -18px 0px 0 0 #333, 0px 9px 0 0 #333, 0px 18px 0 0 #333;
+}
+
+#dotted-menu:checked + .dotted-menu:after {
+  box-shadow: -12px -12px 0 0 #333, 6px -6px 0 0 #333, 12px -12px 0 0 #333, -6px -6px 0 0 #333, 6px 6px 0 0 #333, -12px 12px 0 0 #333, -6px 6px 0 0 #333, 12px 12px 0 0 #333;
+}
+
+.dotted-dropdown {
+  position: fixed;
+  top: calc(50% + 80px);
+  left: 50%;
+}
+.dotted-dropdown:hover:after {
+  background: none;
+  box-shadow: -18px -18px 0 0 transparent, -12px -6px 0 0 #333, 18px -18px 0 0 transparent, -6px 0px 0 0 #333, 6px 0px 0 0 #333, -18px 18px 0 0 transparent, 0px 6px 0 0 #333, 18px 18px 0 0 transparent, 12px -6px 0 0 #333;
+}
+
+#dotted-dropdown:checked + .dotted-dropdown:after {
+  background: none;
+  box-shadow: -18px -18px 0 0 transparent, -12px 6px 0 0 #333, 18px -18px 0 0 transparent, -6px 0px 0 0 #333, 6px 0px 0 0 #333, -18px 18px 0 0 transparent, 0px -6px 0 0 #333, 18px 18px 0 0 transparent, 12px 6px 0 0 #333;
+}
+
+.dotted-dropside {
+  position: fixed;
+  top: calc(50% + 160px);
+  left: 50%;
+}
+.dotted-dropside:hover:after {
+  background: none;
+  box-shadow: -18px -18px 0 0 transparent, -6px -12px 0 0 #333, 18px -18px 0 0 transparent, -6px 12px 0 0 #333, 0px -6px 0 0 #333, -18px 18px 0 0 transparent, 0px 6px 0 0 #333, 18px 18px 0 0 transparent, 6px 0px 0 0 #333;
+}
+
+#dotted-dropside:checked + .dotted-dropside:after {
+  background: none;
+  box-shadow: -18px -18px 0 0 transparent, 6px -12px 0 0 #333, 18px -18px 0 0 transparent, 6px 12px 0 0 #333, 0px -6px 0 0 #333, -18px 18px 0 0 transparent, 0px 6px 0 0 #333, 18px 18px 0 0 transparent, -6px 0px 0 0 #333;
+}
