@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{margin:0; padding:0; font:inherit; color:inherit;}
+*, :after, :before {box-sizing:border-box; flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent; -webkit-text-size-adjust:100%; text-size-adjust:100%; cursor:default; line-height:1.5; overflow-wrap:break-word; -moz-tab-size:4; tab-size:4;}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block; max-width:100%;}
+img {width:100%; height:auto; -webkit-perspective: 1;} /* 모바일에서 이미지 선명도 - 노출되는 이미지 사이즈 2배크기의 원본이미지 적용 <img src='img.png' alt='' style='width:원본사이즈 1/2 사이즈 기재' />   */
+button {background:none; border:0; cursor:pointer;}
+a {text-decoration:none;}
+table {border-collapse:collapse; border-spacing:0;}
+ol, ul {list-style: none;}
+
+.clear{zoom:1; clear:both;}
+.clear:after{content:" "; display:block; clear:both;}
+.hide{display: none;}
+
+
+/*!
+* 2022-06-03
+* CSS Custom Reset Stylee
+* ladyareum.office@gmal.com
+*/
+
+/* custom */
+:root {font-size:62.5%; /* font-size:10px; */}
+body{font-family: 'SCDream', 'Noto Sans KR', 'Poppins', Helvetica, sans-serif; font-size:1.4rem; font-size:14px; line-height: 1.4; color:#333;}
+/* 크로스브라우징 작업 HACK GUIDE */
+
+/* 크롬 핵 */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	/* 여기에 css 작업 */
+}
+
+/* 파이어폭스 핵 */
+@-moz-document url-prefix() {
+	/* 여기다 쓸 css 넣기 */
+}
+
+/* 선택자핵 */
+
+/* IE 6 이상 */
+* html #uno { }
+ 
+/* IE 7 이상 */
+*:first-child+html #dos { }
+ 
+/* IE 7 과 현대 브라우저 */
+html>body #tres { }
+ 
+/* 현대 부라우저 (IE 7 빼고) */
+html>/**/body #cuatro {}
+ 
+/* 오페라 9.27 이상 */
+html:first-child #cinco {}
+
+/*사파리,크롬,오페라 다수브라우저핵*/
+
+html[xmlns*=""] body:last-child #seis { }
+ 
+/*사파리 3+, 크롬 1+, 오페라 9+, 불여우 3.5+ */
+html[xmlns*=""] body:last-child #seis { }
+ 
+/*사파리 3+, 크롬 1+, 오페라 9+, 불여우 3.5+ */
+body:nth-of-type(1) #siete { }
+ 
+/* 사파리 3+, 크롬 1+, 오페라 9+, 불여우 3.5+ */
+body:first-of-type #ocho { }
+ 
+/* 사파리 3, 크롬 1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+}
