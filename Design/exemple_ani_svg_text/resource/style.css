@@ -96,6 +96,7 @@ svg text {
     text-transform: uppercase;
     font-size: 140px;
     animation: stroke 5s infinite alternate;
+    -webkit-animation:stroke 5s infinite alternate;
 }
 
 @keyframes stroke {

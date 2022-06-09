@@ -26,6 +26,7 @@ ol, ul {list-style: none;}
 
 /* custom */
 :root {font-size:62.5%; /* font-size:10px; */}
+html{scroll-behavior: smooth;}
 body{font-family: 'SCDream', 'Noto Sans KR', 'Poppins', Helvetica, sans-serif; font-size:1.4rem; font-size:14px; line-height: 1.4; color:#333;}
 /* 크로스브라우징 작업 HACK GUIDE */
 
