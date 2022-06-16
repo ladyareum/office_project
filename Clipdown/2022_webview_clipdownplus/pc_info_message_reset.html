@@ -14,28 +14,163 @@
     <meta name="google-signin-scope" content="profile email">
     <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <style>
-        :root{font-size:62.5%; /* font-size:10px; */}
-        * {margin: 0; padding: 0; border: 0; font-size:100%; font: inherit; vertical-align:baseline;}
-        article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section{display:block;} /* HTML5 display-role reset for older browsers */
-        html, body{width: 100%; height: 100%;}
-        html{-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
-        body{overflow-x: hidden; overflow-y: auto;-ms-overflow-style:none; font-family:'Noto Sans KR', Helvetica, sans-serif; font-size:1.4rem; font-size:14px; font-weight: 400; line-height: 1.4; color:#333;}
-        .wrap{position: relative; width: 100%; height: 100%;}
-        .point-text{color:#e21d19;}
-        .weight-700_extraBold{font-weight:700;}
-        .btn_area{position: relative; width: 100%; text-align: center; vertical-align: middle; margin: 20px 0;}
-        .btn{display: inline-block; position: relative; min-width: 86px; padding: 5px 10px; color:#757575; font-size: 14px; font-size: 1.4rem; font-weight: 500; text-align: center; vertical-align: middle;touch-action: manipulation; margin: 0 2px;}
-        .btn_defualt{background: #888; border: 1px solid #888; color: #fff;}
-        .btn_defualt:hover{background: #333; border: 1px solid #333; color: #fff;}
-        .btn_point{background: #eb524e; border: 1px solid #eb524e; color: #fff;}
-        .btn_point:hover{background: #e21d19; border: 1px solid #e21d19; color: #fff;}
-        .webview_info .inner{position: relative; max-width: 480px; width: 100%; height:100%; margin: 0 auto;}  /* PC프로그램 웹뷰창 최소사이즈 기준 */
-        .webview_box{width: 100%; height: 100%; text-align: center; padding: 0 20px;}
-        .webview_box .title_message{margin-bottom: 15px;}
-        .webview_box .title_message h1{font-size: 20px; font-size: 2.0rem; font-weight: 500;}
-        .webview_info .webview_box .content_info_message{position: absolute; top:50%; left:50%; width: 100%; transform: translate(-50%, -50%);}
-        .content_info_message .text_message p{font-size: 16px; font-size: 1.6rem; line-height: 1.6; padding: 8px 0;}
-        
+        :root {
+            font-size: 62.5%; /* font-size:10px; */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        html {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            overflow-x: hidden;
+            overflow-y: auto;
+            -ms-overflow-style: none;
+            font-family: 'Noto Sans KR', Helvetica, sans-serif;
+            font-size: 1.4rem;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: #333;
+        }
+
+        .wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #f8f8f8;
+        }
+
+        .point-text {
+            color: #e21d19;
+        }
+
+        .weight-700_extraBold {
+            font-weight: 700;
+        }
+
+        .btn_area {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            position: relative;
+            min-width: 86px;
+            padding: 5px 15px;
+            color: #757575;
+            font-size: 16px;
+            font-size: 1.6rem;
+            font-weight: 500;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            margin: 0 2px;
+        }
+
+        .btn_defualt {
+            background: #888;
+            border: 1px solid #888;
+            color: #fff;
+        }
+
+        .btn_defualt:hover {
+            background: #333;
+            border: 1px solid #333;
+            color: #fff;
+        }
+
+        .btn_point {
+            background: #eb524e;
+            border: 1px solid #eb524e;
+            color: #fff;
+        }
+
+        .btn_point:hover {
+            background: #e21d19;
+            border: 1px solid #e21d19;
+            color: #fff;
+        }
+
+        .webview_info .inner {
+            position: relative;
+            max-width: 656px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        /* PC프로그램 웹뷰창 최소사이즈 기준 */
+        .webview_box {
+            height: 100%;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .webview_info .webview_box .content_text{
+            padding : 40px 40px;
+            margin: 0 20px;
+            background:#fff;
+        }
+
+        .webview_box .title_message {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eb524e;
+        }
+
+        .webview_box .title_message h1 {
+            font-size: 26px;
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing:-.1rem;
+        }
+
+        .webview_info .webview_box .content_info_message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+
+        .content_info_message .text_message p {
+            font-size: 18px;
+            font-size: 1.8rem;
+            line-height: 1.3;
+            padding: 8px 0;
+            letter-spacing: -.05rem;
+        }
+
+        @media screen and (max-width : 476px) { 
+            .webview_info .webview_box .content_text{padding: 20px 20px;}
+            .webview_box .title_message h1{font-size: 22px; font-size: 2.2rem;}
+            .content_info_message .text_message p{font-size: 16px; font-size: 1.6rem;}
+    }
     </style>		
     
     <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
