@@ -2,10 +2,10 @@ function animateFrom(elem, direction) {
     direction = direction || 1;
     var x = 0,
         y = direction * 100;
-    if(elem.classList.contains("gs_reveal_fromLeft")) {
+    if(elem.classList.contains("item_reveal_left")) {
       x = -100;
       y = 0;
-    } else if (elem.classList.contains("gs_reveal_fromRight")) {
+    } else if (elem.classList.contains("item_reveal_right")) {
       x = 100;
       y = 0;
     }
@@ -28,7 +28,7 @@ function animateFrom(elem, direction) {
   document.addEventListener("DOMContentLoaded", function() {
     gsap.registerPlugin(ScrollTrigger);
     
-    gsap.utils.toArray(".gs_reveal").forEach(function(elem) {
+    gsap.utils.toArray(".content_item_reveal").forEach(function(elem) {
       hide(elem); // assure that the element is hidden when scrolled into view
       
       ScrollTrigger.create({
