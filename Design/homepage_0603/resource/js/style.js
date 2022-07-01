@@ -53,7 +53,7 @@ t1.to(
     duration: 0.5,
     ease: "expo.out",
   },
-  3
+  2
 );
 
 t1.to(
@@ -63,7 +63,7 @@ t1.to(
     duration: 0.8,
     ease: "power1.out",
   },
-  3
+  2
 );
 
 ///////
@@ -75,7 +75,7 @@ t1.to(
     duration: 0.5,
     ease: "power1.out",
   },
-  3.2
+  2.2
 );
 
 t1.to(
@@ -85,7 +85,7 @@ t1.to(
     duration: 0.5,
     ease: "power1.out",
   },
-  3.4
+  2.4
 );
 
 t1.to(
@@ -95,7 +95,7 @@ t1.to(
     duration: 0.5,
     ease: "power1.out",
   },
-  3.6
+  2.6
 );
 
 t1.from(
@@ -106,15 +106,22 @@ t1.from(
     ease: "power1.out",
     opacity: 0,
   },
-  3.8
+  2.8
 );
 
 t1.from(".cover-5", {
-  yPercent: -100,
-  duration: 1,
-  ease: "power1.out",
-  delay: 0.3,
+   xPercent: 100,
+   duration: 1,
+   ease: "power1.out",
+   delay: 0.3,
 });
+
+// t1.from(".cover-5", {
+//   opacity:0,
+//   duration: 1,
+//   ease: "power1.out",
+//   delay: 0.3,
+// });
 
 // Animation
 function animateFrom(elem, direction) {
