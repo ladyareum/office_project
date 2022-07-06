@@ -10,13 +10,12 @@
 .app_download_guide{position: relative; height: auto; min-height:100%; background: #f5f5f5;}
 .app_download_guide .inner{position: relative; max-width: 567px; margin: 0 auto;}
 .app_download_guide .contents{padding-bottom: 40px;}
-.app_download_guide .header{position: relative; padding: 20px 20px; background: #e21d19;}
-.app_download_guide .header .header_title{font-size: 18px; font-size: 1.8rem; font-weight: 500; color: #fff;}
+.app_download_guide .header{position: relative; padding: 15px 15px; background: #444;}
+.app_download_guide .header .header_title{font-size: 16px; font-size: 1.6rem; font-weight: 500; color: #fff;}
 .app_download_guide .section{padding:0 20px;}
-.app_download_guide .section .content_item{margin: 40px 0;}
+.app_download_guide .section .content_item{margin: 20px 0;}
 .app_download_guide .content_notice{background: #fff; font-size: 14px; font-size: 1.4rem; line-height: 1.8; text-align: center; padding: 20px 20px;}
 .app_download_guide .content_notice p{font-size: 16px; font-size: 1.6rem; font-weight: 500; padding-bottom: 20px;}
-.app_download_guide .download_item{}
 .app_download_guide .guide_list .list_item{text-align: left; margin-bottom: 30px;}
 .app_download_guide .guide_list .list_item:last-child{margin-bottom: 0;}
 .app_download_guide .list_item .item_guide{background: #f5f5f5; text-align: center; margin: 10px 0; padding: 20px 20px;}
@@ -30,8 +29,8 @@
 -webkit-tap-highlight-color: transparent; white-space: nowrap; padding: 20px 26px 18px;}
 .btn_downlad:hover{text-decoration: none;}
 .download_apk, .download_one{display: inline-block; padding-right: 10px;}
-.download_apk .btn_downlad{background: #eb524e; color: #fff; font-size: 16px; font-size: 1.6rem; font-weight: 500;}
-.download_apk .btn_downlad:hover{background: #e21d19;}
+.download_apk .btn_downlad{background: #e21d19; color: #fff; font-size: 16px; font-size: 1.6rem; font-weight: 500;}
+.download_apk .btn_downlad:hover{background: #eb524e;}
 .download_one .btn_downlad{background: #272727; color: #fff; padding: 9px 26px;}
 .download_one .btn_downlad:hover{background: #000;}
 .download_one .btn_downlad svg{position: relative; top: 2px;}
