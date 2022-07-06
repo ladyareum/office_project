@@ -38,9 +38,6 @@
     .btn_box div:last-child{padding-bottom: 0;}
     .btn_downlad{display: block; width: 100%;}
     .download_apk, .download_one{display: block; padding-right: 0; padding-bottom: 20px;}
-    
-
 }
-
 .footer-section{position: relative; width: 100%; transform : translateY(-100%); text-align: center; padding: 20px 0;}
-.footer-section .copyright{font-size: 12px; font-size: 1.2rem; color: #aaa;}
+.footer-section .copyright{font-size: 11px; font-size: 1.1rem; color: #aaa;}
