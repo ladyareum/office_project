@@ -6,7 +6,7 @@
     * 클립다운 APP apk 다운로드 설치안내 페이지 
 */
 .font_en{font-family: 'Poppins', sans-serif; font-weight: 300;}
-
+.bg_wh{background: #fff !important;}
 .app_download_guide{position: relative; height: auto; min-height:100%; background: #f5f5f5;}
 .app_download_guide .inner{position: relative; max-width: 567px; margin: 0 auto;}
 .app_download_guide .contents{padding-bottom: 40px;}
@@ -17,6 +17,7 @@
 .app_download_guide .content_notice{background: #fff; padding: 20px 20px;}
 .app_download_guide .content_notice p{font-size: 18px; font-size: 1.8rem; font-weight: 500; text-align: center; padding-top: 20px; padding-bottom: 20px;}
 .app_download_guide .content_notice .content_text{font-size: 16px; font-size: 1.6rem; line-height: 1.8; text-align: left;}
+.app_download_guide .content_guide{}
 .app_download_guide .guide_list .list_item{line-height: 1.4; text-align: left; margin-bottom: 30px;}
 .app_download_guide .guide_list .list_item:last-child{margin-bottom: 0;}
 .app_download_guide .list_item .item_guide{background: #f5f5f5; text-align: center; margin: 10px 0; padding: 20px 20px;}
