@@ -352,3 +352,131 @@ nav{float: right;}
 .imsrk2 {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 100px; font-size:10rem; font-weight: 700; color: #fff; line-height: 1; letter-spacing: 4px;}
 
 .ani_fadein_all{ animation: fadein 3s 5s linear forwards; -webkit-animation: fadein 3s 5s linear forwards; }
+
+
+
+.gsap_wrap .section{width: 100%; padding: 100px 0;}
+.gsap_wrap .heading{font-size: 40px; font-weight: 700; letter-spacing: 0.05em;}
+.gsap_wrap .title{font-size: 52px; text-align: center; padding: 200px 0 20px;}
+.gsap_wrap .normal-text{font-size: 20px; letter-spacing: 0.08em; margin-top: 60px;}
+.gsap_wrap .side-scroll{display: flex; justify-content: center; align-items: center; background-color: #1b1717;}
+.gsap_wrap .side-scroll .side-scroll-heading{color: #eeebdd;}
+.gsap_wrap .side-scroll-list-wrapper{position: relative; width: 100%; height: 700px;}
+.gsap_wrap .side-scroll-list{display: flex; gap: 0 60px; position:absolute; left: 0;}
+.gsap_wrap .side-scroll-item{display: flex; align-items: center; justify-content: center; width: 300px; height: 420px; background: #eeebdd; color: #1b1717; font-size: 32px; font-weight: 700;}
+.gsap_wrap .side-scroll-item + .side-scroll-item {margin-left: 60px;}
+
+#ImgWrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 2200px;
+  background: hsl(0, 0%, 94%);
+}
+
+#ImgWrapper img {
+  position: absolute;
+  box-shadow: 0 0 31px black;
+}
+
+#ImgWrapper #img1 {
+  z-index: 1;
+  height: 50vh;
+  bottom: 15%;
+  left: 5%;
+}
+
+#ImgWrapper #img2 {
+  z-index: 2;
+  height: 45vh;
+  bottom: 40%;
+  right: 5%;
+}
+
+#ImgWrapper #img3 {
+  z-index: 3;
+  height: 40vh;
+  bottom: 22%;
+  right: 25%;
+}
+
+#ImgWrapper #img4 {
+  z-index: 4;
+  height: 31vh;
+  bottom: 55%;
+  left: 13%;
+}
+
+#ImgWrapper #img5 {
+  z-index: 5;
+  height: 50vh;
+  bottom: 22%;
+  left: 36%;
+}
+
+#ImgWrapper #img6 {
+  z-index: 6;
+  height: 31vh;
+  bottom: 13%;
+  left: 13%;
+}
+
+#ImgWrapper #img7 {
+  z-index: 7;
+  height: 31vh;
+  bottom: 10%;
+  right: 13%;
+}
+
+#codeby {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#codeby a {
+  text-decoration: none;
+  font-size: 34.03px;;
+  font-weight: 400;
+  color: hsl(0, 0%, 90%);;
+}
+
+#codeby a span {
+  font-weight: 700;
+  display: inline-block;
+  color: hsl(0, 0%, 94%);;
+}
+
+
+/* intro 02 intro_bg */
+.intro_bg{position: fixed; width: 100vw; height: 100vh; background: #fff;}
+.bg_grid{display: flex; position: relative; height: 100%; margin: 0; padding: 0; pointer-events: none; z-index: 2;} 
+.bg_grid li{width: 16.66%; /* border-right: 1px solid rgb(21 56 92 / 0.03); */ margin: 0; padding: 0;} 
+.bg_blurs{position: absolute; top:0; left: 0; right: 0; bottom: 0; perspective: 800px;}
+.bg_blurs > [class*="blur"]{ animation: rotate 10s linear infinite; transform-origin: top left; perspective: 800px; -webkit-animation: rotate 10s linear infinite; }
+.bg_blurs > [class*="blur-2"]{animation: rotate-backwards 30s linear infinite;}
+.bg_blurs > [class*="blur-2"] > span{width: 800px !important; height: 800px !important;}
+.bg_blurs > [class*="blur-3"] > span{width: 700px !important; height: 700px !important;}
+.bg_blurs > [class*="blur"] > span{display: block; width: 500px; height: 500px; background: url(../images/bg_blurry.png); background-size: cover;  border-radius: 100%; margin-top: -125px; margin-left: -125px;}
+.bg_blurs > [class*="blur"]::before{content: ''; display: block; position: absolute; width: 200px; height: 200px; background: rgb(255 255 255 / 20%); border-radius: 100%; margin: -100px 0 0 -100px; animation: bob 60s ease-in-out infinite; z-index: 2;}
+.blur-1 {position: absolute; left: 23%; top: 20%; width: 0px; height: 0px;}
+.blur-2 {position: absolute; right: 20%; top: 30%; width: 0px; height: 0px; animation-delay: 1s !important;}
+.blur-2::before {display: none !important;}
+.blur-3 {position: absolute; right: 35%; top: 63%; width: 0px; height: 0px; animation-delay: 6s !important;}
+
+.blur-1 > span { animation: blur1 5s ease infinite; -webkit-animation: blur1 5s ease infinite; }
+.blur-2 > span { animation: blur2 5s ease infinite; -webkit-animation: blur2 5s ease infinite; }
+.blur-3 > span { animation: blur3 5s ease infinite; -webkit-animation: blur3 5s ease infinite; }
+
+
+@media screen and (max-width: 860px) {
+  .bg_grid li {
+    width: 25%;
+  }
+  .bg_grid li:nth-child(odd) {
+    display: none;
+  }
+}
