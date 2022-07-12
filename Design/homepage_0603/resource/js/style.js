@@ -199,6 +199,6 @@ gsap.to(listEl, {
     pin: true,
     anticipatePin: 1,
     invalidateOnRefresh: true,
-  },
+  }
 });
 
