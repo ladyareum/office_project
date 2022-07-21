@@ -408,7 +408,13 @@ nav{float: right;}
 .btn_circle .btn_text{font-weight: 700;}
 .btn_circle .btn_text::before{width: 12px; height: 2px; top:50%; right: 5px; margin-top: -2px; background: #272727; }
 .btn_circle .btn_text::after{width: 0; height: 0; top:50%; right: 0; margin-top: -6px; border-style: solid; border-width: 5px 0 5px 5px; border-color: transparent transparent transparent #272727;}
-.btn_circle .btn_text:hover{color: #32E1F0;}
-.btn_circle .btn_text:hover::before{background: #32E1F0;}
-.btn_circle .btn_text:hover::after{border-color:transparent transparent transparent #32E1F0}
 
+/* .btn_circle .btn_text:hover{color: #32E1F0;}
+.btn_circle .btn_text:hover::before{background: #32E1F0;}
+.btn_circle .btn_text:hover::after{border-color:transparent transparent transparent #32E1F0} */
+
+
+
+.btn_link .btn_circle:hover .btn_text{color: #32E1F0; }
+.btn_link .btn_circle:hover .btn_text::before{background: #32E1F0;}
+.btn_link .btn_circle:hover .btn_text::after{border-color:transparent transparent transparent #32E1F0}

@@ -1,6 +1,13 @@
 // Favicon 브라우저 다크모드인지 쿠키값을 저장 후 php에서 구분할 수 있는 형태로 사용가능?
 //(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
 
+$(".nav_item li").click(
+  function(event) {
+    $('li').removeClass('active')
+    $(event.target.parentNode).addClass('active')
+  }
+);
+
 // load2
 let t1 = gsap.timeline();
 
@@ -183,6 +190,7 @@ window.onload = function () {
     $("body").toggleClass("active");
   });
 };
+
 
 
 

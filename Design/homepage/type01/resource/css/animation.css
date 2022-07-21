@@ -5,7 +5,7 @@
 */
 
 .ani_fadein{ animation:fadein 3s linear infinite; -webkit-animation:fadein 3s linear infinite; }
-.ani_draw_line{ stroke-dasharray: 1000; stroke-dashoffset: 1000; animation:drawLine 5s linear forwards ; -webkit-animation:drawLine 5s linear forwards ; }
+.ani_draw_line{ stroke-dasharray: 3000; stroke-dashoffset: 1000; animation:drawLine 10s linear forwards; -webkit-animation:drawLine 10s linear forwards; }
 
 @keyframes fadein {
   from {opacity: 0;}
@@ -22,7 +22,7 @@
 @keyframes drawLine
 {
   from{
-    stroke-dashoffset: :822;
+    stroke-dashoffset: :4000;
   }
   to{
     stroke-dashoffset: 0;
@@ -114,10 +114,10 @@
 }
 
 @keyframes loading-text {
-  0%, 10%, 100% {
+  0%, 10%{
     width:0;
   }
-  70%, 90% {
+  75%, 100% {
     width:100%;
   }
 }
@@ -285,49 +285,6 @@
   }
 }
 
-
-
-/* 
-  삭제예정 (코드확인필요)
-*/
-@keyframes anim {
-  0% {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-  33% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  66% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(300px);
-  }
-}
-
-@-webkit-keyframes anim {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-300px);
-  }
-  33% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-  }
-  66% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateX(300px);
-  }
-}
-
 .ani_blur{ animation: blur 2s ease-in-out  infinite; -webkit-animation: blur 2s ease-in-out  infinite; }
 @-webkit-keyframes blur {
   0%, 100% {
@@ -371,4 +328,9 @@
   to {
     margin-left: 0%;
   }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
