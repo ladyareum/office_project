@@ -387,11 +387,22 @@
 
 @keyframes focus-middle {
   20%,70% { filter: blur(3px) }
-  0,10%,80%,100% { filter: blur(0.01px) }
+  0%,10%,80%,100% { filter: blur(0.01px) }
 }
 
 @keyframes focus-front {
   60%,70% { filter: blur(6px) }
   0%,10%,50%,80%,100% { filter: blur(3px) }
   20%,40% { filter: blur(0.01px) }
+}
+
+
+.ani_reveal_top{ animation: revealTop 1s cubic-bezier(0.77, 0, 0.175, 1); -webkit-animation: revealTop 1s cubic-bezier(0.77, 0, 0.175, 1); }
+@keyframes revealTop {
+  0% {
+    transform: translate(0,100%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
 }

@@ -141,7 +141,8 @@ function animateFrom(elem, direction) {
     elem,
     { x: x, y: y, autoAlpha: 0 },
     {
-      duration: 1.25,
+      delay:.5,
+      duration: 2,
       x: 0,
       y: 0,
       autoAlpha: 1,
@@ -167,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
         animateFrom(elem);
       },
       onEnterBack: function () {
-        animateFrom(elem, -1);
+        animateFrom(elem, -1.5);
       },
       onLeave: function () {
         hide(elem);

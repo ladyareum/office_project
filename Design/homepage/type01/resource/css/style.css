@@ -109,7 +109,9 @@ nav{float: right; animation:fadein 1s linear forwards;}
 .content_about, .content_vision, .content_history, .content_service{position: relative; padding: 20rem 0;}
 .content_history{padding-bottom: 160px;}
 .content_vision{ padding-bottom: 17.368421vw;} 
-.icon_vision svg .draw{ animation: draw 8s 2s ease infinite; -webkit-animation: draw 8s 2s ease infinite; }
+.icon_vision svg.draw, .icon_vision2 svg.draw{ animation: draw 8s ease infinite; -webkit-animation: draw 8s ease infinite; }
+.icon_vision svg.draw{animation-delay: 0s;}
+.icon_vision2 svg.draw{animation-delay: 2s;}
 .icon_vision2{position:absolute; bottom:40%; right: -18%; width: 100%;}
 .icon_vision2.ani_blur{ animation: blur 3s 3.5s ease-in-out infinite; -webkit-animation: blur 3s 3.5s ease-in-out infinite;}
 
@@ -420,3 +422,4 @@ nav{float: right; animation:fadein 1s linear forwards;}
 .btn_circle .btn_text{font-weight: 700;}
 .btn_circle .btn_text::before{width: 12px; height: 2px; top:50%; right: 5px; margin-top: -2px; background: #272727; }
 .btn_circle .btn_text::after{width: 0; height: 0; top:50%; right: 0; margin-top: -6px; border-style: solid; border-width: 5px 0 5px 5px; border-color: transparent transparent transparent #272727;}
+

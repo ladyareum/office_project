@@ -138,14 +138,14 @@
                         <div class="row">
                             <div class="column">
                                 <div class="icon icon_vision ani_pulse content_item_reveal">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 269.405 269.404">
-                                        <g id="symbol_vision" transform="translate(0.703 0.703)" class="draw">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 269.405 269.404" class="draw">
+                                        <g id="symbol_vision" transform="translate(0.703 0.703)" >
                                           <path id="Path_31" data-name="Path 31" d="M31.361,53.618,0,85.374,31.361,117.13H236.638L268,85.374,236.638,53.618Z" transform="translate(0 48.626)" fill="#fff" opacity="0.5" stroke="#fff" stroke-width="1"/>
                                           <path id="Path_32" data-name="Path 32" d="M85.375,0,53.617,31.361V236.638L85.375,268l31.758-31.36,0-205.277Z" transform="translate(48.625 0)" fill="#fff" opacity="0.5" stroke="#fff" stroke-width="1"/>
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="icon icon_vision2 focus_back ani_blur content_item_reveal" style="opacity: 1; visibility: inherit; transform: translate(0px, 0px);">
+                                <div class="icon icon_vision2 focus_back ani_blur content_item_reveal" >
                                     <svg id="symbol_vision" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 88.049 88.19" class="draw">
                                         <path id="Path_31" data-name="Path 31" d="M10.3,53.618,0,63.921l10.3,10.3H77.745l10.3-10.3-10.3-10.3Z" transform="translate(0 -19.755)" fill="#fff" opacity="0.3"></path>
                                         <path id="Path_32" data-name="Path 32" d="M63.921,0l-10.3,10.3V77.745l10.3,10.3,10.3-10.3V10.3Z" transform="translate(-19.896 0.142)" fill="#fff" opacity="0.3"></path>
@@ -176,7 +176,7 @@
                         <div class="content_text">WE ARE TOGETHER FOR YOUR FUTURE &#8226; WE ARE TOGETHER FOR YOUR FUTURE &#8226; </div>
                     </div>
                     <div class="effect_item_marquee">
-                        <div class="content_text_02">
+                        <div class="content_text_02 content_item_reveal">
                             <div class="text">BETTER</div>
                             <div class="text">THAN</div>
                             <div class="text">NOW</div>
@@ -203,15 +203,15 @@
                                 </div>
                             </div>
                             <div class="column">
-                                <div class="content_text content_item_reveal">
+                                <div class="content_text">
                                     <ul class="item_history">
-                                        <li class="">
+                                        <li class="content_item_reveal">
                                             <div class="item_title">2020.12</div>
                                             <div class="item_intro">
                                                 <p>- 성과공유기업 신청 및 선정</p>
                                             </div>
                                         </li>
-                                        <li class="">
+                                        <li class="content_item_reveal">
                                             <div class="item_title">2019.10</div>
                                             <div class="item_intro">
                                                 <P>- 기업부설연구소 인증 연장</P>
@@ -222,7 +222,7 @@
                                                 <P>- AI 기술을 이용한 티켓예약 및 강의 신청 도움 서비스</P>
                                             </div>
                                         </li>
-                                        <li class="">
+                                        <li class="content_item_reveal">
                                             <div class="item_title">2018.10</div>
                                             <div class="item_intro">
                                                 <P>- 기술역량 우수기업 인증</P>
@@ -237,7 +237,7 @@
                                                 <P>- 유튜브 동영상 서드파티 프로그램 서비스 런칭 및 고도화</P>
                                             </div>
                                         </li>
-                                        <li class="">
+                                        <li class="content_item_reveal">
                                             <div class="item_title">2017.06</div>
                                             <div class="item_intro">
                                                 <P>- 벤처기업인증</P>
@@ -250,7 +250,7 @@
                                                 <P>- 클립다운 상표권 등록</P>
                                             </div>
                                         </li>
-                                        <li class="">
+                                        <li class="content_item_reveal">
                                             <div class="item_title">2017.06</div>
                                             <div class="item_intro">
                                                 <P>- 벤처기업인증</P>
@@ -258,7 +258,7 @@
                                                 <P>- 헬프클린 상표권 출원</P>
                                             </div>
                                         </li>
-                                        <li class="">
+                                        <li class="content_item_reveal">
                                             <div class="item_title">2016.03</div>
                                             <div class="item_intro">
                                                 <P>- 개인용 PC 최적화 솔루션 준비</P>
@@ -266,7 +266,7 @@
                                                 <P>- 헬프클린 상표권 등록</P>
                                             </div>
                                         </li>
-                                        <li class="">
+                                        <li class="content_item_reveal">
                                             <div class="item_title">2015.01</div>
                                             <div class="item_intro">
                                                 <P>- (주)제이스퓨처 설립</P>
@@ -279,9 +279,7 @@
                     </div> 
                 </div>
             </article>
-            
         </section>
-        
         <footer class="section footer">
             <div class="inner">
                 <article class="left">
@@ -323,6 +321,20 @@
 		$(".progress-container label:nth-child("+index+")").css( "-animation", "anim 4s "+time+"ms infinite ease-in-out" );
 	    }
     })
+    </script>
+    <script>
+    gsap.to(".content_history .content_header", {
+        duration: 0.5,
+        //scale: 0.4,
+        transformOrigin: "top left",
+        ease: "none",
+        scrollTrigger: {
+            trigger: ".content_header",
+            start: "top top",
+            end: "top -100%",
+            scrub: true
+        }
+    });
     </script>
 </body>
 </html>
