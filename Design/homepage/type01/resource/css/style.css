@@ -307,12 +307,12 @@ nav{float: right; animation:fadein 1s linear forwards;}
 } 
 
 .btn_menu .icon{display: inline-block; position: relative; width: 32px; min-width: 20px; max-width: 32px; max-height: 32px; margin: 0 calc(32px / 2); vertical-align: middle;}
-.btn_menu .icon span{position: absolute; background: #272727;}
+.btn_menu .icon span{position: absolute; background: #fff;}
 .icon_menu{height: calc(32px * 0.75);}
 .icon_menu span{height: 2px; left: 0; right: 0;}
 .icon_menu span:nth-of-type(1){top:0; transform-origin: left; transition: transform 0.2s cubic-bezier(0.5,0,0,1); -webkit-transition: transform 0.2s cubic-bezier(0.5,0,0,1); -moz-transition: transform 0.2s cubic-bezier(0.5,0,0,1); -ms-transition: transform 0.2s cubic-bezier(0.5,0,0,1); -o-transition: transform 0.2s cubic-bezier(0.5,0,0,1);}
 .icon_menu span:nth-of-type(2){ top:50%; transform:translate3d(0, -50%, 0); -webkit-transform:translate3d(0, -50%, 0); -moz-transform:translate3d(0, -50%, 0); -ms-transform:translate3d(0, -50%, 0); -o-transform:translate3d(0, -50%, 0); transform-origin: center; background: transparent !important;}
-.icon_menu span:nth-of-type(2)::before{ content: ''; position: absolute; top:0; left:0; right: 0; bottom: 0; background: #272727; transform-origin: right; transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s ; -webkit-transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s ; -moz-transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s ; -ms-transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s ; -o-transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s;}
+.icon_menu span:nth-of-type(2)::before{ content: ''; position: absolute; top:0; left:0; right: 0; bottom: 0; background: #fff; transform-origin: right; transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s ; -webkit-transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s ; -moz-transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s ; -ms-transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s ; -o-transition:transform 0.5s cubic-bezier(0.5,0,0,1) 0.15s;}
 .icon_menu span:nth-of-type(3){ bottom: 0; transform-origin: left; transition:transform 0.5s cubic-bezier(0.5,0,0,1); -webkit-transition:transform 0.5s cubic-bezier(0.5,0,0,1); -moz-transition:transform 0.5s cubic-bezier(0.5,0,0,1); -ms-transition:transform 0.5s cubic-bezier(0.5,0,0,1); -o-transition:transform 0.5s cubic-bezier(0.5,0,0,1); transform: scale3d(0.75, 1, 1); -webkit-transform: scale3d(0.75, 1, 1); -moz-transform: scale3d(0.75, 1, 1); -ms-transform: scale3d(0.75, 1, 1); -o-transform: scale3d(0.75, 1, 1); }
 .icon_menu.active span:nth-of-type(1){ transform: translate3d(15%, 0, 0) rotate(45deg); transition: transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0.2s; -webkit-transform: translate3d(15%, 0, 0) rotate(45deg); -moz-transform: translate3d(15%, 0, 0) rotate(45deg); -ms-transform: translate3d(15%, 0, 0) rotate(45deg); -o-transform: translate3d(15%, 0, 0) rotate(45deg); }
 .icon_menu.active span:nth-of-type(2){ transform: translate3d(0, -50%, 0) rotate(180deg); -webkit-transform: translate3d(0, -50%, 0) rotate(180deg); -moz-transform: translate3d(0, -50%, 0) rotate(180deg); -ms-transform: translate3d(0, -50%, 0) rotate(180deg); -o-transform: translate3d(0, -50%, 0) rotate(180deg); }
@@ -322,8 +322,7 @@ nav{float: right; animation:fadein 1s linear forwards;}
 
   
 @media screen and (max-width : 768px) { 
-  .inner{width: 90vw;}
-
+  .container, .inner{width: 90vw;}
   .nav_item{display: none;}
   .m_nav_box{display: block; margin: 15px 0;}
   .m_nav_box .btn_menu.active .icon span{background: #fff;}
@@ -332,23 +331,24 @@ nav{float: right; animation:fadein 1s linear forwards;}
   .m_nav_box .btn_menu.active .icon_menu span:nth-of-type(2){transform: translate3d(0, -50%, 0) rotate(180deg);}
   .m_nav_box .btn_menu.active .icon_menu span:nth-of-type(2)::before{transform: translate3d(20%, 0, 0) scale3d(0, 1, 1);}
   .m_nav_box .btn_menu.active .icon_menu span:nth-of-type(3){ transform: translate3d(15%, 0, 0) rotate(-45deg); transition: transform 0.4s cubic-bezier(0.5, 0, 0, 1) 0.25s; -webkit-transform: translate3d(15%, 0, 0) rotate(-45deg); -moz-transform: translate3d(15%, 0, 0) rotate(-45deg); -ms-transform: translate3d(15%, 0, 0) rotate(-45deg); -o-transform: translate3d(15%, 0, 0) rotate(-45deg); }
-
   .m_nav_box .overlay{ position: fixed; width: 100%; height: 100%; top:0; left: 0; visibility: hidden; background: #272727; opacity: 0; overflow-y: scroll; -webkit-transition: opacity .35s, height .35s, visibility .35s; transition: opacity .35s, height .35s, visibility .35s; z-index: 1; -moz-transition: opacity .35s, height .35s, visibility .35s; -ms-transition: opacity .35s, height .35s, visibility .35s; -o-transition: opacity .35s, height .35s, visibility .35s; }
-  .m_nav_box .overlay.show{height: 100%; opacity: .9; visibility: visible;}
+  .m_nav_box .overlay.show{height: 100%; opacity: .95; visibility: visible;}
   .m_nav_box .overlay.show li{-webkit-animation: fadeInTop .5s ease forwards; animation: fadeInTop .5s ease forwards; -webkit-animation-delay: .35s; animation-delay: .35s;}
   .m_nav_box .overlay.show  li:nth-of-type(2) { -webkit-animation-delay: .4s; animation-delay: .4s;}
   .m_nav_box .overlay.show  li:nth-of-type(3) { -webkit-animation-delay: .45s; animation-delay: .45s;}
   .m_nav_box .overlay.show  li:nth-of-type(4) { -webkit-animation-delay: .50s; animation-delay: .50s;}
-  .m_nav_box .overlay .m_nav_item{position: relative; height: 70%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); text-align: center;}
+  .m_nav_box .overlay .m_nav_item{position: relative; height: 40%; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); text-align: center;}
   .m_nav_box .overlay  ul{display: inline-block; position: relative; height: 100%; margin: 0 auto;}
   .m_nav_box .overlay  ul li{display: block; position: relative; height: 25%; height: calc(100% / 4); min-height: 50px; opacity: 0;}
-  .m_nav_box .overlay  ul li a{display: block; position: relative; color: #fff; text-decoration: none; overflow: hidden;}
+  .m_nav_box .overlay  ul li a{display: block; position: relative; font-size:28px; font-size: 2.8rem; font-weight: 700; color: #fff; text-decoration: none; overflow: hidden;}
   .m_nav_box .overlay ul li a:hover:after,
   .m_nav_box .overlay ul li a:focus:after,
   .m_nav_box .overlay ul li a:active:after {width: 100%;}
   .m_nav_box .overlay ul li a:after {
   content: ''; position: absolute; bottom: 0; left: 50%; width: 0%; -webkit-transform: translateX(-50%); transform: translateX(-50%); height: 1px; background: #FFF; -webkit-transition: .35s; transition: .35s;}
 
+  .section_intro .ani_item{}
+  .section_intro .ani_item .ani_shape{flex-direction: row}
 
 
   .content_benefits .column{flex:40%;}
