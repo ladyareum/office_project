@@ -207,13 +207,13 @@ a.disabled{pointer-events: none;}
 .checkbox span::after{ content: ''; display: none; position: absolute; top:1px; left: 5px; width: 4px; height: 8px; border: solid #666; border-width:0 2px 2px 0; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg);}
 .checkbox input:checked~span:after{display: inline-block; margin-right: 15px; margin-bottom: 5px;}
 
-.items_agency_select{position: relative; max-width: 460px; margin: 0 auto;}
-.items_agency_select .form{display: grid; grid-template-columns: 33% 33% 33%; grid-column-gap: 4%; align-content: center; justify-content: center; justify-items: center; margin-top: 10px;}
-.items_agency_select .item_method{width: 16.2rem;}
+.items_agency_select{position: relative; max-width: 520px; margin: 0 auto;}
+.items_agency_select .form{display: grid; grid-template-columns: 30% 30% 30%; grid-column-gap: 4%; align-content: center; justify-content: center; justify-items: center; margin-top: 10px;}
+.items_agency_select .item_method{width: 16rem;}
 .items_agency_select .item_method .btn_radio { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; background: #fff; color: #1C2729; text-align: center; border: 1px solid #ddd; padding: 10px 10px; cursor: pointer;}
 .item_method input[type="radio"] {display: none;}
 .item_method input[type="radio"]:checked + .btn_radio {color: #e21d19; border: 3px solid #e21d19; padding: 8px 8px;}
-.style_night .item_box_text{font-size: 18px; font-size: 1.8rem; border: 0; border-radius:0 ; text-align: left; padding:10px 0;}
+.style_night .item_box_text{ font-size: 18px; font-size: 1.8rem; border: 0; border-radius:0 ; text-align: left; padding:10px 0; -webkit-border-radius:; -moz-border-radius:; -ms-border-radius:; -o-border-radius:; }
 .style_night .items_agency_select{max-width: 310px;}
 .style_night .items_agency_select .form{grid-template-columns: 50% 50%;}
 .style_night .items_agency_select .item_method:nth-child(-n+2){margin-bottom: 10px;}
