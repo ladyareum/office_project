@@ -197,7 +197,7 @@ a.disabled{pointer-events: none;}
 .item_form{position: relative; width: 100%; padding: 10px 0;}
 .item_form .hyphen{padding: 0 5px;}
 .btn-box{padding-top: 30px;}
-.btn_full_point{display: inline-block; position: relative; width: 100%; background: #e21d19; color: #fff; font-size: 1.6rem; font-weight: 500; text-align: center; padding: 10px 20px;}
+.btn_full_point{display: inline-block; position: relative; width: 100%; background: #1b4692; color: #fff; font-size: 1.6rem; font-weight: 500; text-align: center; padding: 10px 20px;}
 
 .content_bottom{position: absolute; width: 100%; bottom: 0; height: 28px; background: #eee; padding: 5px 20px;}
 .content_bottom .item_cookie{position: relative; float: right; line-height: .6;}
@@ -208,8 +208,8 @@ a.disabled{pointer-events: none;}
 .checkbox input:checked~span:after{display: inline-block; margin-right: 15px; margin-bottom: 5px;}
 
 .items_agency_select{position: relative; max-width: 460px; margin: 0 auto;}
-.items_agency_select .form{display: grid; grid-template-columns: 33% 33% 33%; grid-column-gap: 2%; align-content: center; justify-content: center; justify-items: center; margin-top: 40px;}
-.items_agency_select .item_method{width: 15rem;}
+.items_agency_select .form{display: grid; grid-template-columns: 33% 33% 33%; grid-column-gap: 4%; align-content: center; justify-content: center; justify-items: center; margin-top: 10px;}
+.items_agency_select .item_method{width: 16.2rem;}
 .items_agency_select .item_method .btn_radio { display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; background: #fff; color: #1C2729; text-align: center; border: 1px solid #ddd; padding: 10px 10px; cursor: pointer;}
 .item_method input[type="radio"] {display: none;}
 .item_method input[type="radio"]:checked + .btn_radio {color: #e21d19; border: 3px solid #e21d19; padding: 8px 8px;}
@@ -222,6 +222,7 @@ a.disabled{pointer-events: none;}
 .style_night .btn-box{padding-top: 20px;}
 
 .item_img_box{position: relative; max-width: 590px; margin: 0 auto;}
+.btn_radio .item_carroer{position: relative; top:-2px;}
 .img_sk{width: 73px; height: 28px;}
 .img_kt{width: 30px; height: 24px;}
 .img_lg{width: 89px; height: 24px;}
